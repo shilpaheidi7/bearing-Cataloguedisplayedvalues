@@ -1,0 +1,35 @@
+<div class="p-" style="height: calc(100vh - 78px)">
+  <div class="flex flex-col-reverse lt-md:flex-col">
+    <div>
+      <!-- <mat-tab-group mat-align-tabs="center"> -->
+      <!-- <mat-tab label="Type - 1"> -->
+      <p class="p-1 text-black font-medium text-center mx-auto">Thrust collars for cylindrical roller bearings</p>
+      <div class="flex flex-row lt-md:flex-col justify-center gt-sm:space-x-4 lt-md:space-y-4 p-1 m-2">
+        <div class="relative w-[300px] h-[350px] justify-center">
+          <img src="../../../../../../assets/images/cylidrical thurstcollars.png" class="w-[290px] h-[350px]" />
+          <h1 class="absolute top-[110px] left-[61px]">{{ B1 }}</h1>
+          <h1 class="absolute top-[92px] left-[143px]">{{ r1 }}</h1>
+          <h1 class="absolute top-[-1px] left-[133px]">{{ B2 }}</h1>
+          <h1 class="absolute top-[22px] left-[228px]">{{ r }}</h1>
+          <h1 class="absolute top-[170px] left-[190px]">{{ d }}</h1>
+          <h1 class="absolute top-[171px] left-[248px]">{{ d1 }}</h1>
+          <!--<h1 class="absolute top-[181px] left-[225px]">{{ d }}</h1>
+              <h1 class="absolute top-[183px] left-[45px]">{{ D }}</h1>
+              <h1 class="absolute top-[2px] left-[122px]">{{ B }}</h1>-->
+        </div>
+        <!-- <div class="relative justify-center">
+              <img src="../../../../../assets/images/single_row_ball_bearing_two.png" class="w-[300px] h-[350px]" /> -->
+        <!-- <h1 class="absolute top-[181px] left-[225px]">{{ d }}</h1>
+              <h1 class="absolute top-[183px] left-[45px]">{{ D }}</h1>
+              <h1 class="absolute top-[2px] left-[122px]">{{ B }}</h1> -->
+        <!-- <h1 class="absolute top-[105px] left-[201px]">{{ ra }}</h1>
+              <h1 class="absolute top-[161px] left-[12px]">{{ Da }}</h1>
+              <h1 class="absolute top-[161px] left-[276px]">{{ da }}</h1>
+            </div> -->
+      </div>
+      <app-Thrustcollars (bearingValue)="receivedValue($event)"> </app-Thrustcollars>
+      <!-- </mat-tab> -->
+      <!-- </mat-tab-group> -->
+    </div>
+  </div>
+</div>

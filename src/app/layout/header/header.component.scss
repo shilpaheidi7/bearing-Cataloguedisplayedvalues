@@ -1,0 +1,110 @@
+@import "../../../styles.scss";
+@import"../../shared/utils/variables";
+@import"../../shared/utils/global";
+@import"../../shared/utils/theme";
+
+.top-header {
+    height: 44px;
+}
+
+
+.logo-img {
+    z-index: 99;
+    position: relative;
+    top: 0;
+}
+
+.mp-toolbar {
+    margin-bottom: 0;
+}
+
+.mat-toolbar {
+    height: 37px !important;
+    background-color: $primary-color !important;
+    border-radius: 0px !important;
+    padding: 0 10px !important;
+}
+
+.toolbar-text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    /* opacity: 0.8; */
+}
+
+.spacer {
+    flex: 1 1 auto;
+}
+
+.orders-icon {
+    width: 15px;
+    height: 15px;
+}
+
+.wishlist-icon {
+    width: 12px;
+}
+
+.bag-icon {
+    width: 14px;
+}
+
+.icon-text {
+    font-family: "Archivo";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 16px;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    margin-top: 2px;
+}
+
+.icon-img {
+    cursor: pointer;
+    margin-right: 25px;
+}
+
+@media only screen and (min-width: 600px) {
+    .material-toolbar {
+        height: 37px !important;
+        background-color: $primary-color !important;
+        border-radius: 0px !important;
+        padding: 0 10px !important;
+    }
+}
+
+@media only screen and (max-width: 599px) {
+    .angular-material-toolbar {
+        height: 185px !important;
+        background-color: $primary-color !important;
+        border-radius: 0px !important;
+        padding: 0 10px !important;
+    }
+
+    .icon-img {
+        margin-bottom: 8px !important;
+        margin-right: 0 !important;
+    }
+}
+
+
+.mat-menu-item {
+    padding: 0 16px;
+}
+
+.mat-badge-content {
+    width: 16px;
+    height: 16px;
+    font-size: 12px;
+    line-height: 17px;
+}
+
+.mat-badge-accent .mat-badge-content {
+    background: #ff4081;
+    color: #fff;
+}

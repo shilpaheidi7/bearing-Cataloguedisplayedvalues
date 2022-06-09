@@ -1,0 +1,111 @@
+<div class="p-1" style="height: calc(100vh - 78px)">
+  <div class="flex flex-col-reverse sm:flex-col">
+    <div>
+      <mat-tab-group mat-align-tabs="center">
+        <mat-tab label="Type - 1">
+          <p class="p-1 text-black font-medium text-center mx-auto">
+            Drawn cup needle roller bearings caged, open ends, closed one end metric series HK, BK series
+          </p>
+          <div class="flex flex-row lt-xs:flex-col p-2 m-1 gt-xs:space-x-4 lt-xs:space-y-4 justify-center">
+            <div class="relative flex justify-center">
+              <img src="../../../../../../assets/images/drawncup1.png" class="w-[450px] h-[350px]" />
+              <h1 class="absolute top-[181px] left-[275px]">{{ d }}</h1>
+              <!-- <h1 class="absolute top-[183px] left-[45px]">{{ D }}</h1> -->
+              <h1 class="absolute top-[167px] left-[132px] gt-lg:left-[177px] md:left-[140px] lt-xs:left-[112px]">
+                {{ D }}
+              </h1>
+              <h1 class="absolute top-[19px] left-[79px] gt-lg:left-[102px] lt-xs:left-[65px]">{{ C }}</h1>
+              <h1 class="absolute top-[53px] left-[108px] gt-lg:left-[142px] md:left-[115px] lt-xs:left-[90px]">
+                {{ r }}
+              </h1>
+              <h1 class="absolute top-[183px] left-[16px]">{{ Fw }}</h1>
+              <h1 class="absolute top-[136px] left-[253px] gt-lg:left-[342px] md:left-[270px] lt-xs:left-[213px]">
+                {{ C3 }}
+              </h1>
+            </div>
+            <div class="relative flex justify-center">
+              <img src="../../../../../../assets/images/drawncup2.png" class="w-[450px] h-[350px]" />
+              <!--<h1 class="absolute top-[181px] left-[225px]">{{ d }}</h1>
+              <h1 class="absolute top-[183px] left-[45px]">{{ D }}</h1>
+              <h1 class="absolute top-[2px] left-[122px]">{{ B }}</h1>-->
+              <!-- <h1 class="absolute top-[22px] left-[228px]">{{ r }}</h1> -->
+              <h1 class="absolute top-[161px] left-[45px]">{{ Da }}</h1>
+              <h1 class="absolute top-[161px] left-[299px]">{{ da }}</h1>
+            </div>
+          </div>
+          <app-drawncuptable (bearingValue)="receivedValue($event)"></app-drawncuptable>
+        </mat-tab>
+        <mat-tab label="Type - 2">
+          <p class="p-1 text-black font-medium text-center mx-auto">
+            Drawn cup needle roller bearings caged, open ends, closed one end inch series J, JH, MJ-1, MJH-1 series
+          </p>
+          <div class="flex flex-row lt-xs:flex-col gt-xs:space-x-4 lt-xs:space-y-4 p-2 m-1 justify-center">
+            <div class="relative flex justify-center">
+              <img src="../../../../../../assets/images/drawncupinchseries1.png" class="h-[350px] w-full" />
+              <!-- <h1 class="absolute top-[177px] left-[132px]">{{ d }}</h1> -->
+              <h1 class="absolute top-[139px] left-[20px] gt-lg:left-[37px]">{{ D }}</h1>
+              <h1 class="absolute top-[39px] left-[66px]">{{ B }}</h1>
+              <h1 class="absolute top-[82px] left-[106px]">{{ r }}</h1>
+              <h1 class="absolute top-[139px] left-[342px] gt-lg:left-[241px] md:left-[364px] lt-xs:left-[105px]">
+                {{ Fwt2 }}
+              </h1>
+              <h1 class="absolute top-[-1px] left-[100px] gt-lg:left-[166px] md:left-[110px] lt-xs:left-[79px]">
+                {{ Ct2 }}
+              </h1>
+              <h1 class="absolute top-[110px] left-[288px] md:left-[303px] lt-xs:left-[215px] gt-lg:left-[461px]">
+                {{ Y }}
+              </h1>
+            </div>
+            <div class="relative flex flex-wrap justify-center">
+              <img src="../../../../../../assets/images/drawncupinchseries2.png" class="h-[350px] w-full" />
+              <!--<h1 class="absolute top-[177px] left-[132px]">{{ d }}</h1>-->
+              <!--<h1 class="absolute top-[180px] left-[-5px]">{{ D }}</h1>-->
+
+              <!--<h1 class="absolute top-[39px] left-[66px]">{{ B }}</h1>-->
+              <h1 class="absolute top-[181px] left-[340px]">{{ Da }}</h1>
+
+              <h1 class="absolute top-[74px] left-[481px]">{{ r }}</h1>
+            </div>
+          </div>
+          <app-drawncupinchseries (bearingValue)="receivedValue($event)"></app-drawncupinchseries>
+        </mat-tab>
+        <!-- <mat-tab label="Type - 3">
+          <p class="p-1 text-black font-medium text-center mx-auto">
+            Single-row deep groove ball bearing snap ring groove type, locating snap ring type
+          </p>
+          <div class="flex flex-wrap justify-center space-x-0 py-2 sm:space-x-4">
+            <div class="relative w-[550px] flex flex-wrap justify-center">
+              <img src="../../../../../assets/images/single_row_ball_bearing_snap_ring.png" class="h-[350px] w-full" />
+              <h1 class="absolute top-[149px] left-[160px]">{{ d }}</h1>
+              <h1 class="absolute top-[151px] left-[-7px]">{{ D }}</h1>
+              <h1 class="absolute top-[-5px] left-[95px]">{{ B }}</h1>
+              <h1 class="absolute top-[43px] left-[126px]">{{ r }}</h1>
+            </div>
+            <div class="relative w-[550px] flex flex-wrap justify-center">
+              <img
+                src="../../../../../assets/images/single_row_ball_bearing_snap_ring_two.png"
+                class="h-[350px] w-full"
+              /> -->
+        <!-- <h1 class="absolute top-[160px] left-[301px]">{{ d }}</h1>
+              <h1 class="absolute top-[183px] left-[45px]">{{ D }}</h1>
+              <h1 class="absolute top-[2px] left-[122px]">{{ B }}</h1>
+              <h1 class="absolute top-[40px] left-[180px]">{{ r }}</h1>-->
+        <!-- <h1 class="absolute top-[146px] left-[256px]">{{ ra }}</h1>
+              <h1 class="absolute top-[159px] left-[88px]">{{ Da }}</h1>
+              <h1 class="absolute top-[182px] left-[369px]">{{ da }}</h1>
+            </div>
+          </div>
+        </mat-tab>
+      </mat-tab-group> -->
+        <!-- </div> -->
+
+        <div>
+          <!-- <app-deep-groove-table (bearingValue)="receivedValue($event)"></app-deep-groove-table> -->
+          <!-- <app-singlerowcylindrical></app-singlerowcylindrical> -->
+        </div>
+        <!-- </div> -->
+        <!-- </div> -->
+      </mat-tab-group>
+    </div>
+  </div>
+</div>

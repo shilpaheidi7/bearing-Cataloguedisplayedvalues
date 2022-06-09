@@ -1,0 +1,12 @@
+@import'./variables';
+
+@mixin box-shadow {
+    background: #FFFFFF;
+    box-shadow: 0 8px 12px rgba(47, 60, 74, .04), 0 2px 6px rgba(47, 60, 74, .08) !important;
+    border-radius: 5px;
+}
+
+@mixin view-height($height:37px) {
+    height: calc(100vh - $height);
+    overflow-y: auto;
+}

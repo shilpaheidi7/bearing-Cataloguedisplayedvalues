@@ -1,0 +1,15 @@
+# Query: Technical Apps Paper Industry
+# Flags: CaseSensitive WordMatch
+# ContextLines: 1
+
+2 results - 2 files
+
+src\app\layout\header\header.component.ts:
+  16  
+  17:   appTitle: string = 'Bearing Catalogue App ';
+  18  
+
+src\app\modules\app-store\technical-apps-paper-industry\technical-apps-paper-industry.component.ts:
+  90      this.sidenav();
+  91:     this.title = 'Bearing Catalogue App';
+  92  

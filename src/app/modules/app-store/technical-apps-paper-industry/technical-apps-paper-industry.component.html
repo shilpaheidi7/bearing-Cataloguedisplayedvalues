@@ -1,0 +1,44 @@
+<div class="_container">
+  <div class="content">
+    <div class="menuBar" fxLayout="row ">
+      <mat-icon class="" style="font-size: 30px; cursor: pointer; color: #3366ff" (click)="drawer.toggle()">
+        menu
+      </mat-icon>
+      <div class="primary-heading" style="margin: 0 auto; line-height: 31px">
+        {{ title }}
+      </div>
+    </div>
+    <mat-drawer-container class="example-container">
+      <mat-drawer #drawer opened="false" mode="push" disableClose="true">
+        <ng-container>
+          <mat-form-field class="px-[16px] py-2" appearance="outline" style="width: 300px">
+            <mat-label>Search by Bearing Number</mat-label>
+            <input matInput type="text" [(ngModel)]="filterTerm" />
+            <mat-icon style="cursor: pointer" matSuffix> search </mat-icon>
+          </mat-form-field>
+          <mat-nav-list>
+            <!-- <ng-container *ngFor="let i of menu | filter: filterTerm">
+              <a
+                mat-list-item
+                (click)="sideOnclickClose(); getmenuName(i.menu)"
+                [routerLink]="i.link"
+                [routerLinkActive]="'is-active'"
+              >
+                <div class="item" fxLayout="row" fxLayoutGap="10px">
+                  <mat-icon>calculate</mat-icon>
+                  <div class="">{{ i.menu | titlecase }}</div>
+                </div>
+              </a>
+              <mat-divider></mat-divider>
+            </ng-container>-->
+          </mat-nav-list>
+          <p-panelMenu [model]="items" [style]="{ width: '300px' }"></p-panelMenu>
+        </ng-container>
+      </mat-drawer>
+
+      <mat-drawer-content>
+        <router-outlet></router-outlet>
+      </mat-drawer-content>
+    </mat-drawer-container>
+  </div>
+</div>

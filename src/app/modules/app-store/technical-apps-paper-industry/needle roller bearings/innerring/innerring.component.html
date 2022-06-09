@@ -1,0 +1,139 @@
+<div class="p-" style="height: calc(100vh - 78px)">
+  <div class="flex flex-col-reverse sm:flex-col">
+    <div>
+      <mat-tab-group mat-align-tabs="center">
+        <mat-tab label="Type - 1">
+          <p class="p-1 text-black font-medium text-center mx-auto">
+            Needle roller bearings, accessories inner rings metric series
+          </p>
+          <div class="flex flex-row justify-center lt-xs:flex-col lt-xs:space-y-4 p-2 m-1">
+            <div class="relative flex flex-wrap justify-center">
+              <img src="../../../../../../assets/images/innerring4.png" class="w-[300px] h-[350px]" />
+
+              <h1 class="absolute top-[169px] left-[62px] gt-lg:left-[79px] md:left-[67px] lt-xs:left-[77px]">
+                {{ d }}
+              </h1>
+              <h1 class="absolute top-[167px] left-[210px] gt-lg:left-[271px] md:left-[223px] lt-xs:left-[265px]">
+                {{ F }}
+              </h1>
+              <h1 class="absolute top-[19px] left-[127px] gt-lg:left-[165px] md:left-[135px] lt-xs:left-[157px]">
+                {{ B }}
+              </h1>
+              <h1 class="absolute top-[99px] left-[188px] gt-lg:left-[243px] md:left-[199px] lt-xs:left-[235px]">
+                {{ r }}
+              </h1>
+            </div>
+            <div class="relative flex flex-wrap justify-center">
+              <img src="../../../../../../assets/images/innerring2.png" class="w-[300px] h-[350px]" />
+
+              <!--<h1 class="absolute top-[181px] left-[225px]">{{ d }}</h1>
+              <h1 class="absolute top-[183px] left-[45px]">{{ D }}</h1>
+              <h1 class="absolute top-[2px] left-[122px]">{{ B }}</h1>-->
+              <!-- <h1 class="absolute top-[22px] left-[228px]">{{ r }}</h1> -->
+
+              <!-- <h1 class="absolute top-[161px] left-[299px]">{{ da }}</h1> -->
+            </div>
+            <div class="relative flex flex-wrap justify-center">
+              <img src="../../../../../../assets/images/innerring3.png" class="w-[300px] h-[350px]" />
+
+              <!--<h1 class="absolute top-[181px] left-[225px]">{{ d }}</h1>
+              <h1 class="absolute top-[183px] left-[45px]">{{ D }}</h1>
+              <h1 class="absolute top-[2px] left-[122px]">{{ B }}</h1>-->
+              <!-- <h1 class="absolute top-[22px] left-[228px]">{{ r }}</h1> -->
+              <h1 class="absolute top-[161px] left-[45px]">{{ Da }}</h1>
+              <h1 class="absolute top-[161px] left-[299px]">{{ da }}</h1>
+            </div>
+          </div>
+          <app-innerringinchseries (bearingValue)="receivedValue($event)"></app-innerringinchseries>
+        </mat-tab>
+        <mat-tab label="Type - 2">
+          <p class="p-1 text-black font-medium text-center mx-auto">
+            Needle roller bearings, accessories inner rings for machine-tool quality precision-combined bearings metric
+            series
+          </p>
+          <div class="flex flex-row justify-center lt-xs:flex-col lt-xs:space-y-4 p-2 m-1">
+            <div class="relative flex flex-wrap justify-center">
+              <img src="../../../../../../assets/images/innerring5.png" class="w-[300px] h-[350px]" />
+
+              <h1 class="absolute top-[162px] left-[29px] gt-lg:left-[38px] md:left-[31px] lt-xs:left-[37px]">
+                {{ d }}
+              </h1>
+              <h1 class="absolute top-[162px] left-[215px] gt-lg:left-[271px] md:left-[223px] lt-xs:left-[268px]">
+                {{ Ft2 }}
+              </h1>
+              <h1 class="absolute top-[19px] left-[127px] gt-lg:left-[165px] md:left-[135px] lt-xs:left-[162px]">
+                {{ B }}
+              </h1>
+              <h1
+                class="absolute top-[91px] left-[195px] gt-lg:left-[253px] md:left-[208px] lt-xs:left-[246px] lt-xs:top-[91px]"
+              >
+                {{ r }}
+              </h1>
+            </div>
+            <div class="relative flex flex-wrap justify-center">
+              <img src="../../../../../../assets/images/innerring6.png" class="w-[300px] h-[350px]" />
+
+              <!--<h1 class="absolute top-[181px] left-[225px]">{{ d }}</h1>
+              <h1 class="absolute top-[183px] left-[45px]">{{ D }}</h1>
+              <h1 class="absolute top-[2px] left-[122px]">{{ B }}</h1>-->
+              <!-- <h1 class="absolute top-[22px] left-[228px]">{{ r }}</h1> -->
+
+              <!-- <h1 class="absolute top-[161px] left-[299px]">{{ da }}</h1> -->
+            </div>
+            <div class="relative flex flex-wrap justify-center">
+              <img src="../../../../../../assets/images/innerring7.png" class="w-[300px] h-[350px]" />
+
+              <!--<h1 class="absolute top-[181px] left-[225px]">{{ d }}</h1>
+              <h1 class="absolute top-[183px] left-[45px]">{{ D }}</h1>
+              <h1 class="absolute top-[2px] left-[122px]">{{ B }}</h1>-->
+              <!-- <h1 class="absolute top-[22px] left-[228px]">{{ r }}</h1>-->
+              <h1 class="absolute top-[161px] left-[45px]">{{ Da }}</h1>
+              <h1 class="absolute top-[161px] left-[299px]">{{ da }}</h1>
+            </div>
+          </div>
+
+          <app-innerringmetricseries2 (bearingValue)="receivedValue($event)"></app-innerringmetricseries2>
+        </mat-tab>
+        <mat-tab label="Type - 3">
+          <p class="p-1 text-black font-medium text-center mx-auto">
+            Heavy-duty needle roller bearings inner rings inch series
+          </p>
+          <div class="flex flex-row lt-sm:flex-col justify-center p-2 m-1">
+            <div class="relative flex flex-row gt-xs:space-x-4 lt-sm:flex-col justify-center">
+              <img src="../../../../../../assets/images/innerringinch1.png" class="h-[350px] w-[300px]" />
+              <img src="../../../../../../assets/images/innerringinch2.png" class="h-[350px] w-[300px]" />
+
+              <h1 class="absolute top-[198px] left-[82px] lt-xs:left-[97px]">{{ d }}</h1>
+              <h1 class="absolute top-[200px] left-[275px] lt-xs:left-[251px] lt-xs:top-[217px]">{{ Ft3 }}</h1>
+              <h1 class="absolute top-[38px] left-[171px] lt-xs:left-[182px]">{{ B }}</h1>
+              <h1 class="absolute top-[100px] left-[522px] lt-xs:left-[210px] lt-xs:top-[452px]">{{ r }}</h1>
+            </div>
+            <div class="relative flex flex-wrap justify-center">
+              <!-- <img
+                src="../../../../../assets/images/single_row_ball_bearing_snap_ring_two.png"
+                class="h-[350px] w-full"
+              />  -->
+              <!-- <h1 class="absolute top-[160px] left-[301px]">{{ d }}</h1>
+              <h1 class="absolute top-[183px] left-[45px]">{{ D }}</h1>
+              <h1 class="absolute top-[2px] left-[122px]">{{ B }}</h1>
+              <h1 class="absolute top-[40px] left-[180px]">{{ r }}</h1>-->
+              <h1 class="absolute top-[146px] left-[256px]">{{ ra }}</h1>
+              <h1 class="absolute top-[159px] left-[88px]">{{ Da }}</h1>
+              <h1 class="absolute top-[182px] left-[369px]">{{ da }}</h1>
+            </div>
+          </div>
+          <app-innerringtable (bearingValue)="receivedValue($event)"></app-innerringtable>
+        </mat-tab>
+        <!-- </mat-tab-group> -->
+        <!-- </div> -->
+
+        <div>
+          <!-- <app-deep-groove-table (bearingValue)="receivedValue($event)"></app-deep-groove-table> -->
+          <!-- <app-singlerowcylindrical></app-singlerowcylindrical> -->
+        </div>
+        <!-- </div> -->
+        <!-- </div> -->
+      </mat-tab-group>
+    </div>
+  </div>
+</div>

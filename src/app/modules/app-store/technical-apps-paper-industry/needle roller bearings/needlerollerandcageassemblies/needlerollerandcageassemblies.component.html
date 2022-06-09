@@ -1,0 +1,108 @@
+<div class="p-1" style="height: calc(100vh - 78px)">
+  <div class="flex flex-col-reverse sm:flex-col">
+    <div>
+      <mat-tab-group mat-align-tabs="center">
+        <mat-tab label="Type - 1">
+          <p class="p-1 text-black font-medium text-center mx-auto">
+            Radial needle roller and cage assemblies single-row, double-row assemblies metric series K, K ZW series
+          </p>
+          <div class="flex flex-row lt-xs:flex-col gt-xs:space-x-4 lt-xs:space-y-4 p-2 m-1 justify-center">
+            <div class="relative flex flex-row justify-center">
+              <img src="../../../../../../assets/images/needleroller1.png" class="w-[450px] h-[350px]" />
+              <h1 class="absolute top-[181px] left-[185px] gt-lg:left-[245px] md:left-[199px] lt-xs:left-[156px]">
+                {{ Fw }}
+              </h1>
+              <h1 class="absolute top-[142px] left-[300px] gt-lg:left-[399px] md:left-[317px] lt-xs:left-[252px]">
+                {{ Ew }}
+              </h1>
+              <h1 class="absolute top-[10px] left-[76px] gt-lg:left-[101px] md:left-[82px] lt-xs:left-[67px]">
+                {{ Bc }}
+              </h1>
+            </div>
+            <div class="relative flex flex-row justify-center">
+              <img src="../../../../../../assets/images/needleroller2.png" class="w-[450px] h-[350px]" />
+              <!--<h1 class="absolute top-[181px] left-[225px]">{{ d }}</h1>-->
+              <h1 class="absolute top-[144px] left-[253px] gt-lg:left-[345px] md:left-[275px] lt-xs:left-[216px]">
+                {{ S }}
+              </h1>
+              <h1
+                class="absolute top-[162px] left-[296px] gt-lg:left-[393px] md:top-[143px] lt-xs:left-[225px] lt-xs:top-[186px]"
+              >
+                {{ H }}
+              </h1>
+              <h1 class="absolute top-[22px] left-[228px]">{{ r }}</h1>
+              <h1 class="absolute top-[161px] left-[45px]">{{ Da }}</h1>
+              <h1 class="absolute top-[161px] left-[299px]">{{ da }}</h1>
+            </div>
+          </div>
+          <app-needlerollertable (bearingValue)="receivedValue($event)"></app-needlerollertable>
+        </mat-tab>
+        <mat-tab label="Type - 2">
+          <p class="p-1 text-black font-medium text-center mx-auto">
+            Radial needle roller and cage assemblies single-row assemblies inch series
+          </p>
+          <div class="flex flex-row gt-xs:space-x-4 lt-xs:space-y-4 lt-xs:flex-col p-2 m-1 justify-center">
+            <div class="relative flex flex-row justify-center">
+              <img src="../../../../../../assets/images/Radialneedleinchseries1.png" class="h-[350px] w-full" />
+              <!-- <h1 class="absolute top-[177px] left-[132px]">{{ d }}</h1>
+              <h1 class="absolute top-[180px] left-[-5px]">{{ D }}</h1>
+               <h1 class="absolute top-[39px] left-[66px]">{{ B }}</h1> -->
+              <!--
+              <h1 class="absolute top-[125px] left-[179px]">{{ z }}</h1>  -->
+              <h1 class="absolute top-[152px] left-[44px]">{{ Fwt2 }}</h1>
+              <h1 class="absolute top-[4px] left-[-143px] gt-lg:left-[149px] lt-xs:left-[149px]">{{ Bct2 }}</h1>
+              <h1 class="absolute top-[159px] left-[188px]">{{ Ewt2 }}</h1>
+            </div>
+            <div class="relative flex justify-center">
+              <img src="../../../../../../assets/images/Radialneedleinchseries2.png" class="h-[350px] w-full" />
+              <!--<h1 class="absolute top-[177px] left-[132px]">{{ d }}</h1>-->
+              <h1 class="absolute top-[173px] left-[329px] md:left-[339px] lt-xs:left-[226px]">{{ G6 }}</h1>
+
+              <h1 class="absolute top-[127px] left-[287px] lt-xs:left-[193px]">{{ h5 }}</h1>
+              <h1 class="absolute top-[181px] left-[340px]">{{ Da }}</h1>
+
+              <h1 class="absolute top-[74px] left-[481px]">{{ r }}</h1>
+            </div>
+          </div>
+          <app-neeedlerollerinchseries (bearingValue)="receivedValue($event)"></app-neeedlerollerinchseries>
+        </mat-tab>
+        <!-- <mat-tab label="Type - 3">
+          <p class="p-1 text-black font-medium text-center mx-auto">
+            Single-row deep groove ball bearing snap ring groove type, locating snap ring type
+          </p>
+          <div class="flex flex-wrap justify-center space-x-0 py-2 sm:space-x-4">
+            <div class="relative w-[550px] flex flex-wrap justify-center">
+              <img src="../../../../../assets/images/single_row_ball_bearing_snap_ring.png" class="h-[350px] w-full" />
+              <h1 class="absolute top-[149px] left-[160px]">{{ d }}</h1>
+              <h1 class="absolute top-[151px] left-[-7px]">{{ D }}</h1>
+              <h1 class="absolute top-[-5px] left-[95px]">{{ B }}</h1>
+              <h1 class="absolute top-[43px] left-[126px]">{{ r }}</h1>
+            </div>
+            <div class="relative w-[550px] flex flex-wrap justify-center">
+              <img
+                src="../../../../../assets/images/single_row_ball_bearing_snap_ring_two.png"
+                class="h-[350px] w-full"
+              /> -->
+        <!-- <h1 class="absolute top-[160px] left-[301px]">{{ d }}</h1>
+              <h1 class="absolute top-[183px] left-[45px]">{{ D }}</h1>
+              <h1 class="absolute top-[2px] left-[122px]">{{ B }}</h1>
+              <h1 class="absolute top-[40px] left-[180px]">{{ r }}</h1>-->
+        <!-- <h1 class="absolute top-[146px] left-[256px]">{{ ra }}</h1>
+              <h1 class="absolute top-[159px] left-[88px]">{{ Da }}</h1>
+              <h1 class="absolute top-[182px] left-[369px]">{{ da }}</h1>
+            </div>
+          </div>
+        </mat-tab>
+      </mat-tab-group> -->
+        <!-- </div> -->
+
+        <div>
+          <!-- <app-deep-groove-table (bearingValue)="receivedValue($event)"></app-deep-groove-table> -->
+          <!-- <app-singlerowcylindrical></app-singlerowcylindrical> -->
+        </div>
+        <!-- </div> -->
+        <!-- </div> -->
+      </mat-tab-group>
+    </div>
+  </div>
+</div>

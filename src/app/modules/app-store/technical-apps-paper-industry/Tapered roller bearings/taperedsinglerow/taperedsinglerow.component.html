@@ -1,0 +1,206 @@
+<div class="p-" style="height: calc(100vh - 78px)">
+  <div class="flex flex-col lt-md:flex-col">
+    <div>
+      <mat-tab-group mat-align-tabs="center">
+        <mat-tab label="Type - 1">
+          <p class="p-1 text-black font-medium text-center mx-auto">Single-row tapered roller bearings metric series</p>
+          <div class="flex flex-row lt-md:flex-col justify-center gt-sm:space-x-4 lt-md:space-y-4 p-1 m-2">
+            <div class="relative w-[300px] h-[350px] justify-center">
+              <img src="../../../../../../assets/images/tapered1.png" class="w-[290px] h-[350px]" />
+              <h1 class="absolute top-[9px] left-[151px]">{{ T }}</h1>
+              <h1 class="absolute top-[192px] left-[31px]">{{ D }}</h1>
+              <h1 class="absolute top-[179px] left-[134px]">{{ B }}</h1>
+              <h1 class="absolute top-[41px] left-[146px]">{{ C }}</h1>
+              <h1 class="absolute top-[124px] left-[174px]">{{ r }}</h1>
+              <h1 class="absolute top-[310px] left-[144px]">{{ a }}</h1>
+
+              <h1 class="absolute top-[58px] left-[82px]">{{ r1 }}</h1>
+            </div>
+            <div class="relative justify-center">
+              <img src="../../../../../../assets/images/tapered2.png" class="w-[300px] h-[350px]" />
+              <h1 class="absolute top-[172px] left-[-106px] lt-xs:left-[226px] lt-xs:top-[-174px]">{{ d }}</h1>
+              <h1 class="absolute top-[183px] left-[15px]">{{ Da }}</h1>
+              <h1 class="absolute top-[179px] left-[273px]">{{ Db }}</h1>
+              <h1 class="absolute top-[177px] left-[67px]">{{ db }}</h1>
+              <h1 class="absolute top-[165px] left-[180px]">{{ ra }}</h1>
+              <h1 class="absolute top-[79px] left-[152px]">{{ rb }}</h1>
+              <h1 class="absolute top-[35px] left-[120px]">{{ Sa }}</h1>
+
+              <h1 class="absolute top-[34px] left-[207px]">{{ Sb }}</h1>
+              <!-- <h1 class="absolute top-[161px] left-[276px]">{{ da }}</h1> -->
+            </div>
+          </div>
+          <app-metricseries (bearingValue)="receivedValue($event)"> </app-metricseries>
+        </mat-tab>
+
+        <mat-tab label="Type - 2">
+          <p class="p-1 text-black font-medium text-center mx-auto">Single-row tapered roller bearings inch series</p>
+          <div class="">
+            <div class="relative flex flex-row lt-md:flex-col gt-sm:space-x-4 justify-center lt-md:space-y-4 m-1 p-2">
+              <div class="relative justify-center flex flex-row lt-md:flex-col">
+                <!-- <img class="lt-md:w-full" src="../../../../../../assets/images/shielded1.png" alt="" />
+                <img
+                  class="h-[250px] w-[250px] lt-md:w-full"
+                  src="../../../../../../assets/images/shielded2.png"
+                  alt=""
+                /> -->
+
+                <img src="../../../../../../assets/images/tapered3.png" class="h-[350px] w-[300px]" />
+                <h1 class="absolute top-[217px] left-[246px] gt-lg:left-[232px]">{{ dt2 }}</h1>
+                <h1 class="absolute top-[177px] left-[60px] gt-lg:left-[60px]">{{ Dt2 }}</h1>
+                <h1 class="absolute top-[4px] left-[146px] gt-lg:left-[146px] md:left-[163px] lt-xs:left-[147px]">
+                  {{ Tt2 }}
+                </h1>
+                <h1 class="absolute top-[51px] left-[175px] gt-lg:left-[173px] md:left-[187px] lt-xs:left-[169px]">
+                  {{ Ct2 }}
+                </h1>
+                <h1 class="absolute top-[133px] left-[217px] gt-lg:left-[212px] md:left-[234px] lt-xs:left-[213px]">
+                  {{ rt2 }}
+                </h1>
+                <h1 class="absolute top-[86px] left-[121px] gt-lg:left-[117px] md:left-[128px] lt-xs:left-[114px]">
+                  {{ r1t2 }}
+                </h1>
+
+                <h1 class="absolute top-[318px] left-[172px] gt-lg:left-[168px] md:left-[183px] lt-xs:left-[165px]">
+                  {{ at2 }}
+                </h1>
+
+                <!-- <h1 class="absolute top-[177px] left-[-10px] lt-md:top-[]">{{ Dt2 }}</h1>
+                <h1 class="absolute top-[54px] left-[26px] lt-md:top-[] gt-lg:left-[36px]">{{ B2 }}</h1>
+                <h1 class="absolute top-[177px] left-[74px] md:left-[78px] lt-lg:left-[75px] gt-lg:left-[99px]">
+                  {{ dt2 }}
+                </h1>
+                <h1 class="absolute top-[82px] left-[62px] gt-lg:left-[80px]">{{ r2 }}</h1>
+                <h1 class="absolute top-[130px] left-[251px] gt-lg:left-[336px]">{{ z }}</h1>
+                <h1 class="absolute top-[277px] left-[140px] lt-md:left-[127px] gt-lg:left-[186px]">{{ ZZ }}</h1>
+                <h1 class="absolute top-[275px] left-[237px] gt-lg:left-[324px] lt-md:left-[221px]">
+                  {{ RU }}
+                </h1> -->
+
+                <!-- <h1 class="absolute top-[96px] left-[100px]">{{ dt2 }}</h1> -->
+              </div>
+              <div class="relative flex flex-row lt-md:flex-col justify-center">
+                <!-- <img class="lt-md:w-full" src="../../../../../../assets/images/shielded4.png" alt="" />
+                <img
+                  class="h-[250px] w-[130px] lt-md:w-full"
+                  src="../../../../../../assets/images/shielded3.png"
+                  alt=""
+                /> -->
+                <img src="../../../../../../assets/images/tapered4.png" class="h-[350px] w-[400px]" />
+                <h1 class="absolute top-[177px] left-[292px] gt-lg:left-[313px] md:left-[314px] lt-xs:left-[220px]">
+                  {{ dat2 }}
+                </h1>
+                <h1 class="absolute top-[219px] left-[83px] gt-lg:left-[85px] gt-xl:top-[221px] lt-xs:left-[56px]">
+                  {{ dbt2 }}
+                </h1>
+                <h1 class="absolute top-[219px] left-[350px] gt-lg:left-[361px] md:left-[360px] lt-xs:left-[261px]">
+                  {{ Dbt2 }}
+                </h1>
+                <h1 class="absolute top-[168px] left-[35px] lt-xs:left-[26px]">{{ Dat2 }}</h1>
+                <h1 class="absolute top-[160px] left-[231px] gt-lg:left-[240px] lt-xs:left-[173px] lt-xs:top-[160px]">
+                  {{ rat2 }}
+                </h1>
+                <h1 class="absolute top-[67px] left-[159px] lt-xs:left-[119px]">{{ rbt2 }}</h1>
+
+                <!--
+                <h1 class="absolute top-[278px] left-[129px] lt-md:left-[82px] gt-lg:left-[178px]">{{ RS2 }}</h1>
+                <h1 class="absolute top-[273px] left-[21px]">{{ RD2 }}</h1>
+                <h1 class="absolute top-[130px] left-[31px] gt-lg:left-[41px] lt-md:left-[20px]">{{ RD }}</h1>
+                <h1 class="absolute top-[181px] left-[222px] gt-lg:left-[304px] md:left-[240px] lt-xs:left-[171px]">
+                  {{ Da }}
+                </h1>
+                <h1 class="absolute top-[73px] left-[330px] lt-xs:left-[258px] md:left-[352px] gt-lg:left-[442px]">
+                  {{ ra2 }}
+                </h1>
+
+                <h1 class="absolute top-[130px] left-[143px] lt-lg:left-[106px]">{{ RS }}</h1>
+                <h1 class="absolute top-[182px] left-[362px] md:left-[386px] gt-lg:left-[486px] lt-xs:left-[284px]">
+                  {{ dat2 }}
+                </h1> -->
+                <!--<h1 class="absolute top-[180px] left-[-4px]">{{ d2 }}</h1> -->
+              </div>
+            </div>
+          </div>
+          <app-inchseries (bearingValue)="receivedValue($event)"></app-inchseries>
+        </mat-tab>
+        <!-- <mat-tab label="Type - 3">
+          <p class="p-1 text-black font-medium text-center mx-auto">
+            Single-row deep groove ball bearing snap ring groove type, locating snap ring type
+          </p>
+          <div class="flex flex-row lt-md:flex-col justify-center gt-sm:space-x-4 m-2 p-1 lt-xs:space-y-4">
+            <div class="relative flex flex-wrap justify-center">
+              <img
+                src="../../../../../assets/images/single_row_ball_bearing_snap_ring.png"
+                class="h-[350px] w-[550px]"
+              />
+              <h1 class="absolute top-[149px] left-[100px] gt-lg:left-[160px] md:left-[106px] lt-md:left-[88px]">
+                {{ d }}
+              </h1>
+              <h1 class="absolute left-[-13px] top-[151px] gt-lg:left-[-7px]">{{ D }}</h1>
+
+              <h1 class="absolute left-[62px] lt-md:left-[52px] top-[-5px] gt-lg:left-[95px]">{{ B }}</h1>
+              <h1 class="absolute left-[81px] lt-md:left-[69px] top-[42px] gt-lg:left-[128px]">{{ r13 }}</h1>
+              <h1 class="absolute left-[160px] top-[150px] lt-md:left-[142px] md:left-[174px] gt-lg:left-[193px]">
+                {{ D23 }}
+              </h1>
+              <h1 class="absolute left-[276px] md:left-[294px] lt-xs:left-[238px] top-[226px] gt-lg:left-[371px]">
+                {{ D1 }}
+              </h1>
+
+              <h1 class="absolute left-[2px] top-[34px] gt-lg:left-[17px]">{{ r133 }}</h1>
+
+              <h1 class="absolute left-[255px] md:left-[272px] lt-xs:left-[210px] top-[100px] gt-lg:left-[422px]">
+                {{ a }}
+              </h1>
+              <h1 class="absolute left-[60px] md:left-[63px] lt-xs:left-[52px] top-[281px] gt-lg:left-[98px]">
+                {{ N }}
+              </h1>
+              <h1 class="absolute left-[198px] md:left-[209px] lt-xs:left-[169px] top-[280px] gt-lg:left-[318px]">
+                {{ NR }}
+              </h1>
+
+              <h1 class="absolute left-[205px] md:left-[213px] lt-xs:left-[173px] top-[6px] gt-lg:left-[326px]">
+                {{ f }}
+              </h1>
+              <h1 class="absolute left-[318px] lt-xs:left-[274px] md:left-[340px] top-[147px] gt-lg:left-[514px]">
+                {{ r0 }}
+              </h1> -->
+
+        <!-- <h1 class="absolute  top-[2px] left-[122px]">{{ D1 }}</h1> -->
+        <!-- </div>
+            <div class="relative flex flex-wrap justify-center">
+              <img
+                src="../../../../../assets/images/single_row_ball_bearing_snap_ring_two.png"
+                class="h-[350px] w-[550px]"
+              /> -->
+        <!-- <h1 class="absolute top-[160px] left-[301px]">{{ d }}</h1> -->
+        <!--<h1 class="absolute top-[40px] left-[180px]">{{ r }}</h1>-->
+
+        <!-- <h1 class="absolute gt-lg:left-[255px] top-[151px] md:left-[166px] lt-xs:left-[135px] left-[153px]">
+                {{ ra3 }}
+              </h1>
+              <h1 class="absolute top-[159px] left-[48px] md:left-[53px] gt-lg:left-[80px]">{{ Da3 }}</h1>
+              <h1 class="absolute top-[182px] gt-lg:left-[369px] left-[228px] md:left-[243px] lt-xs:left-[196px]">
+                {{ da }}
+              </h1> -->
+        <!-- <h1 class="absolute top-[160px] left-[84px]">{{ Da3 }}</h1> -->
+        <!-- <h1 class="absolute top-[159px] left-[3px]">{{ Dx }}</h1>
+              <h1 class="absolute top-[3px] gt-lg:left-[189px] left-[155px] md:left-[164px] lt-xs:left-[134px]">
+                {{ Cy }}
+              </h1>
+              <h1 class="absolute top-[45px] gt-lg:left-[153px] left-[89px] md:left-[97px] lt-xs:left-[76px]">
+                {{ rb }}
+              </h1>
+              <h1 class="absolute top-[98px] gt-lg:left-[-78px] left-[-64px] lt-xs:left-[244px] lt-xs:top-[-271px]">
+                {{ b }}
+              </h1>
+            </div>
+          </div>
+          <app-deepgroovesinglerowsnapring
+            (bearingValue)="receivedValue($event)"
+          ></app-deepgroovesinglerowsnapring> </mat-tab
+      > -->
+      </mat-tab-group>
+    </div>
+  </div>
+</div>

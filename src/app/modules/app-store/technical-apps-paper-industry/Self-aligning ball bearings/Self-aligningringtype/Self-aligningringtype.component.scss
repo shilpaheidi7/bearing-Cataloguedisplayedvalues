@@ -1,0 +1,47 @@
+h1 {
+  font-size: small;
+}
+@import '../../../../../shared/utils/global';
+@import '../../../../../shared/utils/variables';
+@import '../../../../../shared/utils/class';
+
+:host ::ng-deep.mat-tab-header {
+  border-bottom: 0px;
+}
+
+:host ::ng-deep.mat-tab-label {
+  background: $primary-color;
+  margin: 0 10px;
+  height: 30px;
+  color: #ffffff;
+  opacity: 10;
+  border-radius: 5px;
+}
+
+:host::ng-deep.mat-ink-bar.mat-ink-bar {
+  display: none;
+}
+
+:host::ng-deep.mat-tab-label-active {
+  background-color: $secondary-color;
+}
+
+:host::ng-deep.mat-tab-body-content {
+  // height: calc(100vh - 108px);
+  overflow: auto;
+}
+
+.image_wrapper {
+  position: relative;
+  /* this will center the image in the container */
+  margin: 0 auto;
+  width: 300px;
+}
+
+#title {
+  position: absolute;
+  top: 25px;
+  /* adjust as desired */
+  left: 15px;
+  /* adjust as desired */
+}

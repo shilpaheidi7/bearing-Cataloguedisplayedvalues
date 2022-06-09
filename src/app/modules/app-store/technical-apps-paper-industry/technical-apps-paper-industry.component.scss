@@ -1,0 +1,57 @@
+@import "../../../shared/utils/global";
+@import "../../../shared/utils/variables";
+@import "../../../shared/utils/theme";
+@import "../../../shared/utils/class";
+
+._container {
+  .content {
+    .mat-drawer-container {
+      height: calc(100vh - 78px);
+    }
+
+    .mat-list-base .mat-list-item {
+      color: rgb(255, 255, 255);
+      font-size: 14px;
+    }
+
+    .menuBar {
+      background-color: #0000001f;
+      padding: 5px;
+      position: relative;
+
+      .text-heading {
+        color: #000000;
+      }
+    }
+
+    .profile {
+      padding: 5px;
+
+      .profile-img {
+        width: 40px;
+        height: 40px;
+      }
+
+      .profile-name {
+        padding: 5px 0;
+      }
+    }
+  }
+}
+
+.mat-drawer-content {
+  height: auto;
+}
+
+.mat-list-base {
+  padding: 0;
+  background: $primary-color;
+}
+
+.mat-nav-list {
+  padding: 0px;
+}
+
+.is-active {
+  background-color: #9a9a9a !important;
+}

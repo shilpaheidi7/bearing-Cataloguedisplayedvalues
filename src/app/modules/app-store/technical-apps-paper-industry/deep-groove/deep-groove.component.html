@@ -1,0 +1,95 @@
+<div class="p-1" style="height: calc(100vh - 78px)">
+  <div class="flex flex-col-reverse sm:flex-col">
+    <div>
+      <mat-tab-group mat-align-tabs="center">
+        <mat-tab label="Type - 1">
+          <p class="p-1 text-black font-medium text-center mx-auto">Single row deep groove ball bearing open type</p>
+          <div class="flex flex-wrap justify-center space-x-4 py-2">
+            <div class="relative w-[350px] flex flex-wrap justify-center">
+              <img
+                src="../../../../../assets/images/single_row_ball_bearing_modified.png"
+                class="w-[250px] h-[350px]"
+              />
+
+              <h1 class="absolute top-[181px] left-[275px]">{{ d }}</h1>
+              <h1 class="absolute top-[183px] left-[45px]">{{ D }}</h1>
+              <h1 class="absolute top-[0px] left-[141px]">{{ B }}</h1>
+              <h1 class="absolute top-[39px] left-[228px]">{{ r }}</h1>
+            </div>
+            <div class="relative w-[350px] flex flex-wrap justify-center">
+              <img src="../../../../../assets/images/single_row_ball_bearing_two.png" class="w-[300px] h-[350px]" />
+              <!--<h1 class="absolute top-[181px] left-[225px]">{{ d }}</h1>
+              <h1 class="absolute top-[183px] left-[45px]">{{ D }}</h1>
+              <h1 class="absolute top-[2px] left-[122px]">{{ B }}</h1>-->
+              <h1 class="absolute top-[22px] left-[228px]">{{ r }}</h1>
+              <h1 class="absolute top-[161px] left-[45px]">{{ Da }}</h1>
+              <h1 class="absolute top-[161px] left-[299px]">{{ da }}</h1>
+            </div>
+          </div>
+        </mat-tab>
+
+        <mat-tab label="Type - 2">
+          <p class="p-1 text-black font-medium text-center mx-auto">
+            Single-row deep groove ball bearing shielded type, sealed type
+          </p>
+          <div class="flex flex-wrap justify-center space-x-0 py-2 sm:space-x-4">
+            <div class="relative w-[550px] flex flex-wrap justify-center">
+              <img
+                src="../../../../../assets/images/single_row_ball_bearing_shieledtype.png"
+                class="h-[350px] w-full"
+              />
+              <h1 class="absolute top-[177px] left-[132px]">{{ d }}</h1>
+              <h1 class="absolute top-[180px] left-[-5px]">{{ D }}</h1>
+              <h1 class="absolute top-[39px] left-[66px]">{{ B }}</h1>
+              <h1 class="absolute top-[82px] left-[106px]">{{ r }}</h1>
+              <h1 class="absolute top-[125px] left-[179px]">{{ z }}</h1>
+            </div>
+            <div class="relative w-[550px] flex flex-wrap justify-center">
+              <img src="../../../../../assets/images/single_row_ball_bearing_sealedtype.png" class="h-[350px] w-full" />
+              <!--<h1 class="absolute top-[177px] left-[132px]">{{ d }}</h1>-->
+              <!--<h1 class="absolute top-[180px] left-[-5px]">{{ D }}</h1>-->
+
+              <!--<h1 class="absolute top-[39px] left-[66px]">{{ B }}</h1>-->
+              <h1 class="absolute top-[181px] left-[340px]">{{ Da }}</h1>
+
+              <h1 class="absolute top-[74px] left-[481px]">{{ r }}</h1>
+              <!-- <app-deepgroovesinglerowshielded [displayed columns]="any"></app-deepgroovesinglerowshielded> -->
+            </div>
+          </div>
+        </mat-tab>
+
+        <mat-tab label="Type - 3">
+          <p class="p-1 text-black font-medium text-center mx-auto">
+            Single-row deep groove ball bearing snap ring groove type, locating snap ring type
+          </p>
+          <div class="flex flex-wrap justify-center space-x-0 py-2 sm:space-x-4">
+            <div class="relative w-[550px] flex flex-wrap justify-center">
+              <img src="../../../../../assets/images/single_row_ball_bearing_snap_ring.png" class="h-[350px] w-full" />
+              <h1 class="absolute top-[149px] left-[160px]">{{ d }}</h1>
+              <h1 class="absolute top-[151px] left-[-7px]">{{ D }}</h1>
+              <h1 class="absolute top-[-5px] left-[95px]">{{ B }}</h1>
+              <h1 class="absolute top-[43px] left-[126px]">{{ r }}</h1>
+            </div>
+            <div class="relative w-[550px] flex flex-wrap justify-center">
+              <img
+                src="../../../../../assets/images/single_row_ball_bearing_snap_ring_two.png"
+                class="h-[350px] w-full"
+              />
+              <!-- <h1 class="absolute top-[160px] left-[301px]">{{ d }}</h1>
+              <h1 class="absolute top-[183px] left-[45px]">{{ D }}</h1>
+              <h1 class="absolute top-[2px] left-[122px]">{{ B }}</h1>
+              <h1 class="absolute top-[40px] left-[180px]">{{ r }}</h1>-->
+              <h1 class="absolute top-[146px] left-[256px]">{{ ra }}</h1>
+              <h1 class="absolute top-[159px] left-[88px]">{{ Da }}</h1>
+              <h1 class="absolute top-[182px] left-[369px]">{{ da }}</h1>
+            </div>
+          </div>
+        </mat-tab>
+      </mat-tab-group>
+    </div>
+
+    <div>
+      <!-- <app-deep-groove-table (bearingValue)="receivedValue($event)"></app-deep-groove-table> -->
+    </div>
+  </div>
+</div>

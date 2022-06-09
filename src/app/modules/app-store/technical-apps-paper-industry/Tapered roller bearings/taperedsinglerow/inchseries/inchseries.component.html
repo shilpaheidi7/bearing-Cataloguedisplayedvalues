@@ -1,0 +1,267 @@
+<div>
+  <div class="flex justify-center flex-wrap space-x-0 sm:space-x-4">
+    <div>
+      <mat-form-field appearance="outline" style="width: 300px">
+        <mat-label>Search by Bearing Number</mat-label>
+        <input matInput type="text" [formControl]="bearingFilter" autocomplete="off" />
+        <mat-icon style="cursor: pointer" matSuffix> search</mat-icon>
+      </mat-form-field>
+    </div>
+
+    <div>
+      <mat-form-field appearance="outline" style="width: 300px">
+        <mat-label>Search by Shaft OD (d)</mat-label>
+        <input matInput type="text" [formControl]="shaftFilter" autocomplete="off" />
+        <mat-icon style="cursor: pointer" matSuffix> search</mat-icon>
+      </mat-form-field>
+    </div>
+  </div>
+
+  <div
+    class="table-responsive mat-elevation-z8 printTable lg:relative lg:overflow-x-scroll gt-lg:relative gt-lg:overflow-x-scroll lt-lg:relative scroll-smooth mb-4 lt-lg:overflow-x-scroll"
+    style="margin: 10px"
+  >
+    <!-- <mat-table #table id="ExampleMaterialTable" matSort [dataSource]="dataSource" matTableResponsive>
+      <ng-container [matColumnDef]="column" *ngFor="let column of displayedColumns">
+        <th mat-header-cell mat-sort-header *matHeaderCellDef>
+          {{ column }}
+        </th>
+        <td mat-cell *matCellDef="let element">
+          {{ element[column] }}
+        </td>
+      </ng-container>
+
+      <ng-container matColumnDef="one">
+        <th mat-header-cell *matHeaderCellDef style="text-align: center" [attr.colspan]="7">Boundary dimensions</th>
+      </ng-container>
+
+      <ng-container matColumnDef="two">
+        <th mat-header-cell *matHeaderCellDef [attr.colspan]="2">Basic load rating (KN)</th>
+      </ng-container>
+
+      <ng-container matColumnDef="three">
+        <th mat-header-cell *matHeaderCellDef [attr.colspan]="1">Fatigue load limit (KN)</th>
+      </ng-container>
+
+      <ng-container matColumnDef="four">
+        <th mat-header-cell *matHeaderCellDef [attr.colspan]="2">Limiting speeds (mm-1)</th>
+      </ng-container>
+
+      <ng-container matColumnDef="five">
+        <th mat-header-cell *matHeaderCellDef [attr.colspan]="2"></th>
+      </ng-container>
+
+      <ng-container matColumnDef="six">
+        <th mat-header-cell *matHeaderCellDef [attr.colspan]="1"></th>
+      </ng-container>
+
+      <ng-container matColumnDef="seven">
+        <th mat-header-cell *matHeaderCellDef [attr.colspan]="6">Mounting dimensions (mm)</th>
+      </ng-container>
+
+      <ng-container matColumnDef="eight">
+        <th mat-header-cell *matHeaderCellDef [attr.colspan]="1"></th>
+      </ng-container>
+
+      <ng-container matColumnDef="nine">
+        <th mat-header-cell *matHeaderCellDef [attr.colspan]="2"></th>
+      </ng-container>
+
+      <ng-container matColumnDef="ten">
+        <th mat-header-cell *matHeaderCellDef [attr.colspan]="2"></th>
+      </ng-container>
+
+      <mat-header-row
+        *matHeaderRowDef="['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight','nine','ten']"
+      ></mat-header-row>
+
+      <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row> -->
+    <!-- <mat-row
+        *matRowDef="let row; columns: displayedColumns"
+        (click)="highlight(row)"
+        [ngClass]="{ highlighted: selection.isSelected(row) }"
+      >
+      </mat-row> -->
+
+    <!--
+         (click)="onRowClicked(row)"
+        [ngClass]="{ highlighted: selection.isSelected(row) }"
+        (mouseover)="highlight(row)"
+       -->
+    <!--
+       (click)="selection.toggle(row)"
+       [ngClass]="{hovered: row.hovered, highlighted: selection.isSelected(row)}"
+        -->
+    <!-- <mat-row
+        *matRowDef="let row; columns: displayedColumns"
+        (click)="selection.toggle(row); onRowClicked(row)"
+        [ngClass]="{
+          hovered: row.hovered,
+          highlighted: selection.isSelected(row)
+        }"
+      >
+      </mat-row>
+    </mat-table> -->
+
+    <!-- <table>
+      <tr *ngIf="!dataSource.data.length">
+        <td style="text-align: center" [attr.colspan]="displayedColumns.length">No Records Found!</td>
+      </tr>
+    </table> -->
+
+    <table mat-table #table [dataSource]="dataSource">
+      <ng-container matColumnDef="header-row-first-group">
+        <th mat-header-cell *matHeaderCellDef [attr.colspan]="7">Boundary dimensions (mm)</th>
+      </ng-container>
+      <ng-container matColumnDef="header-row-second-group">
+        <th mat-header-cell *matHeaderCellDef [attr.colspan]="2">Basic load ratings (kN)</th>
+      </ng-container>
+
+      <ng-container matColumnDef="three">
+        <th mat-header-cell *matHeaderCellDef [attr.colspan]="1">Fatigue load limit (kN)</th>
+      </ng-container>
+
+      <ng-container matColumnDef="four">
+        <th mat-header-cell *matHeaderCellDef [attr.colspan]="2">Limiting speeds (min−1)</th>
+      </ng-container>
+
+      <ng-container matColumnDef="five">
+        <th mat-header-cell *matHeaderCellDef [attr.colspan]="2">Bearing No.</th>
+      </ng-container>
+
+      <ng-container matColumnDef="six">
+        <th mat-header-cell *matHeaderCellDef [attr.colspan]="1">Load center (mm)</th>
+      </ng-container>
+
+      <ng-container matColumnDef="seven">
+        <th mat-header-cell *matHeaderCellDef [attr.colspan]="6">Mounting dimensions (mm)</th>
+      </ng-container>
+
+      <ng-container matColumnDef="eight">
+        <th mat-header-cell *matHeaderCellDef [attr.colspan]="1">Con- stant</th>
+      </ng-container>
+
+      <ng-container matColumnDef="nine">
+        <th mat-header-cell *matHeaderCellDef [attr.colspan]="2">Axial load factors</th>
+      </ng-container>
+
+      <ng-container matColumnDef="ten">
+        <th mat-header-cell *matHeaderCellDef [attr.colspan]="2">(Refer.) Mass (kg)</th>
+      </ng-container>
+
+      <!-- <ng-container matColumnDef="nine">
+        <th mat-header-cell *matHeaderCellDef [attr.colspan]="6">Mounting dimensions (mm)
+         </th>
+      </ng-container> -->
+
+      <!-- <ng-container matColumnDef="seven">
+        <th mat-header-cell *matHeaderCellDef [attr.colspan]="1">Con-
+          stant
+
+         </th>
+      </ng-container>
+
+      <ng-container matColumnDef="eight">
+        <th mat-header-cell *matHeaderCellDef [attr.colspan]="3">Axial load factors
+
+         </th>
+      </ng-container> -->
+
+      <!-- <ng-container matColumnDef="nine">
+        <th mat-header-cell *matHeaderCellDef [attr.colspan]="1">(Refer.) Mass (kg)
+
+         </th>
+      </ng-container> -->
+
+      <!-- <ng-container matColumnDef="eleven">
+        <th mat-header-cell *matHeaderCellDef [attr.colspan]="1">(Refer.)
+          Bearing
+          No.
+         </th>
+      </ng-container> -->
+
+      <tr
+        mat-header-row
+        *matHeaderRowDef="[
+          'header-row-first-group',
+          'header-row-second-group',
+          'three',
+          'four',
+          'five',
+          'six',
+          'seven',
+          'eight',
+          'nine',
+          'ten'
+        ]"
+      ></tr>
+
+      <ng-container *ngFor="let column of columns" [cdkColumnDef]="column.columnDef">
+        <mat-header-cell *cdkHeaderCellDef>{{ column.header }}</mat-header-cell>
+        <mat-cell *cdkCellDef="let row">{{ column.cell(row) }}</mat-cell>
+      </ng-container>
+
+      <!-- <ng-container matColumnDef="one">
+        <th mat-header-cell *matHeaderCellDef style="text-align: center" [attr.colspan]="4">Boundary dimensions</th>
+      </ng-container> -->
+      <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+      <mat-row
+        *matRowDef="let row; columns: displayedColumns"
+        (click)="selection.toggle(row); onRowClicked(row)"
+        [ngClass]="{
+          hovered: row.hovered,
+          highlighted: selection.isSelected(row)
+        }"
+      ></mat-row>
+
+      <!-- Header row second group -->
+    </table>
+
+    <mat-toolbar-row>
+      <!-- <mat-icon
+        title="Export"
+        style="cursor: pointer"
+        [matMenuTriggerFor]="exportMenu"
+        >save_alt</mat-icon
+      >
+      <mat-menu #exportMenu="matMenu">
+        <button mat-menu-item>
+          <mat-icon>picture_as_pdf</mat-icon>
+          <span>Export PDF</span>
+        </button>
+        <button mat-menu-item>
+          <mat-icon>grid_on</mat-icon>
+          <span>Export SpreadSheet</span>
+        </button>
+        <button mat-menu-item>
+          <mat-icon>grid_on</mat-icon>
+          <span>Export csv File</span>
+        </button>
+        <button mat-menu-item>
+          <mat-icon>grid_on</mat-icon>
+          <span>Export json</span>
+        </button>
+        <button
+          mat-menu-item
+          ngxPrintItemButton
+          className="printTable printTitle"
+        >
+          <mat-icon>print</mat-icon>
+          <span>Print</span>
+        </button>
+      </mat-menu> -->
+
+      <!-- <mat-form-field
+        appearance="outline"
+        style="width: 25%; margin-left: 10px; font-size: 10px"
+        class="form-field-style primary-font-family"
+      >
+        <input matInput (keyup)="applyFilter($event)" placeholder="Search" />
+      </mat-form-field> -->
+
+      <!--<mat-paginator [pageSizeOptions]="[5, 10, 25, 100]"></mat-paginator>-->
+      <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons aria-label="Select page of periodic elements">
+      </mat-paginator>
+    </mat-toolbar-row>
+  </div>
+</div>

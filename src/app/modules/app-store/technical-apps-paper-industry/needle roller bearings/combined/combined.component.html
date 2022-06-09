@@ -1,0 +1,132 @@
+<div class="p-" style="height: calc(100vh - 78px)">
+  <div class="flex flex-col-reverse sm:flex-col">
+    <div>
+      <mat-tab-group mat-align-tabs="center">
+        <mat-tab label="Type - 1">
+          <p class="p-1 text-black font-medium text-center mx-auto">
+            Combined needle roller bearings ball thrust series metric series
+          </p>
+          <div class="flex flex-row lt-xs:flex-col gt-xs:space-x-4 lt-xs:space-y-4 justify-center p-2 m-1">
+            <div class="relative flex flex-row lt-xs:flex-col justify-center gt-xs:space-x-4 lt-xs:space-y-4">
+              <img src="../../../../../../assets/images/combined3.png" class="w-[300px] h-[350px]" />
+              <img src="../../../../../../assets/images/combined4.png" class="w-[300px] h-[350px]" />
+
+              <h1 class="absolute top-[168px] left-[212px] lt-xs:top-[151px] lt-xs:left-[223px]">{{ Fw }}</h1>
+              <h1 class="absolute top-[183px] left-[269px] lt-xs:left-[262px]">{{ D }}</h1>
+              <h1 class="absolute top-[12px] left-[146px] lt-xs:top-[-3px] lt-xs:left-[155px]">{{ C }}</h1>
+              <h1 class="absolute top-[164px] left-[12px] lt-xs:left-[28px] lt-xs:top-[149px]">{{ Da }}</h1>
+              <h1 class="absolute top-[173px] left-[368px] lt-xs:left-[72px] lt-xs:top-[523px]">{{ Dw }}</h1>
+              <h1 class="absolute top-[46px] left-[81px] lt-xs:left-[99px] lt-xs:top-[30px]">{{ C1 }}</h1>
+              <h1 class="absolute top-[43px] left-[150px] lt-xs:left-[160px] lt-xs:top-[29px]">{{ C2 }}</h1>
+              <h1 class="absolute top-[93px] left-[203px]">{{ r }}</h1>
+
+              <!-- <h1 class="absolute top-[183px] left-[45px]">{{ D }}</h1> -->
+            </div>
+            <div class="relative flex flex-wrap justify-center">
+              <!-- <img src="../../../../../../assets/images/cylindrical roller bearing1.png" class="w-[450px] h-[350px]" /> -->
+              <!--<h1 class="absolute top-[181px] left-[225px]">{{ d }}</h1>ml-44 mr-36
+              <h1 class="absolute top-[183px] left-[45px]">{{ D }}</h1>
+              <h1 class="absolute top-[2px] left-[122px]">{{ B }}</h1>-->
+              <!-- <h1 class="absolute top-[22px] left-[228px]">{{ r }}</h1> -->
+              <!-- <h1 class="absolute top-[-132px] left-[132px]">{{ Dw }}</h1> -->
+              <h1 class="absolute top-[161px] left-[299px]">{{ da }}</h1>
+              <!-- <h1 class="absolute top-[-295px] left-[81px]">{{ C1 }}</h1>
+              <h1 class="absolute top-[-293px] left-[242px]">{{ C2 }}</h1> -->
+              <h1 class="absolute top-[-220px] left-[127px]">{{ r }}</h1>
+            </div>
+          </div>
+          <app-combinedtable (bearingValue)="receivedValue($event)"></app-combinedtable>
+        </mat-tab>
+        <mat-tab label="Type - 2">
+          <p class="p-1 text-black font-medium text-center mx-auto">
+            Combined needle roller bearings ball thrust series metric series
+          </p>
+          <div class="flex flex-row lt-xs:flex-col gt-xs:space-x-4 lt-xs:space-y-4 justify-center p-2 m-1">
+            <div class="relative flex flex-row lt-xs:flex-col justify-center gt-xs:space-x-4 lt-xs:space-y-4">
+              <div class="flex lt-xs:justify-center">
+                <img
+                  src="../../../../../../assets/images/combinedmetric1.png"
+                  class="w-[200px] lt-xs:w-[300px] h-[350px]"
+                />
+              </div>
+              <div class="flex lt-xs:justify-center">
+                <img
+                  src="../../../../../../assets/images/combinedmetric2.png"
+                  class="w-[200px] lt-xs:w-[300px] h-[350px]"
+                />
+              </div>
+              <div class="flex lt-xs:justify-center">
+                <img
+                  src="../../../../../../assets/images/combinedmetric3.png"
+                  class="w-[200px] lt-xs:w-[300px] h-[350px]"
+                />
+              </div>
+              <h1 class="absolute top-[168px] left-[138px] lt-xs:top-[151px] lt-xs:left-[223px]">{{ Fwt2 }}</h1>
+              <h1 class="absolute top-[168px] left-[162px] lt-xs:top-[149px] lt-xs:left-[262px]">{{ Dt2 }}</h1>
+              <h1 class="absolute top-[12px] left-[98px] lt-xs:top-[-3px] lt-xs:left-[162px]">{{ Ct2 }}</h1>
+              <h1 class="absolute top-[173px] left-[249px] lt-xs:left-[77px] lt-xs:top-[523px]">{{ dwt2 }}</h1>
+              <h1 class="absolute top-[166px] left-[-3px] lt-xs:left-[26px] lt-xs:top-[153px]">{{ Dat2 }}</h1>
+              <h1 class="absolute top-[43px] left-[35px] lt-xs:left-[88px] lt-xs:top-[29px]">{{ C1t2 }}</h1>
+
+              <h1 class="absolute top-[43px] left-[100px] lt-xs:left-[168px] lt-xs:top-[29px]">{{ C2t2 }}</h1>
+              <h1 class="absolute top-[87px] left-[140px] lt-xs:left-[225px] lt-xs:top-[72px]">{{ rt2 }}</h1>
+
+              <h1 class="absolute top-[295px] left-[272px] lt-xs:top-[640px] lt-xs:left-[124px]">{{ NAXR }}</h1>
+              <h1 class="absolute top-[291px] left-[490px] lt-xs:left-[120px] lt-xs:top-[1003px]">{{ NAXRZ }}</h1>
+              <h1 class="absolute top-[292px] left-[60px] lt-xs:top-[277px] lt-xs:left-[122px]">{{ RAXR }}</h1>
+            </div>
+            <div class="relative flex flex-wrap justify-center">
+              <!-- <img src="../../../../../../assets/images/cylindrical roller bearing1.png" class="w-[450px] h-[350px]" /> -->
+              <!--<h1 class="absolute top-[181px] left-[225px]">{{ d }}</h1>ml-44 mr-36
+              <h1 class="absolute top-[183px] left-[45px]">{{ D }}</h1>
+              <h1 class="absolute top-[2px] left-[122px]">{{ B }}</h1>-->
+              <!-- <h1 class="absolute top-[22px] left-[228px]">{{ r }}</h1> -->
+              <!-- <h1 class="absolute top-[-132px] left-[132px]">{{ Dw }}</h1> -->
+              <!-- <h1 class="absolute top-[161px] left-[299px]">{{ da }}</h1> -->
+              <!-- <h1 class="absolute top-[-295px] left-[81px]">{{ C1 }}</h1>
+              <h1 class="absolute top-[-293px] left-[242px]">{{ C2 }}</h1> -->
+              <!-- <h1 class="absolute top-[-220px] left-[127px]">{{ r }}</h1> -->
+            </div>
+          </div>
+          <app-combinedmetricseries2 (bearingValue)="receivedValue($event)"></app-combinedmetricseries2>
+        </mat-tab>
+        <!-- <mat-tab label="Type - 3">
+          <p class="p-1 text-black font-medium text-center mx-auto">
+            Single-row deep groove ball bearing snap ring groove type, locating snap ring type
+          </p>
+          <div class="flex flex-wrap justify-center space-x-0 py-2 sm:space-x-4">
+            <div class="relative w-[550px] flex flex-wrap justify-center">
+              <img src="../../../../../assets/images/single_row_ball_bearing_snap_ring.png" class="h-[350px] w-full" />
+              <h1 class="absolute top-[149px] left-[160px]">{{ d }}</h1>
+              <h1 class="absolute top-[151px] left-[-7px]">{{ D }}</h1>
+              <h1 class="absolute top-[-5px] left-[95px]">{{ B }}</h1>
+              <h1 class="absolute top-[43px] left-[126px]">{{ r }}</h1>
+            </div>
+            <div class="relative w-[550px] flex flex-wrap justify-center">
+              <img
+                src="../../../../../assets/images/single_row_ball_bearing_snap_ring_two.png"
+                class="h-[350px] w-full"
+              /> -->
+        <!-- <h1 class="absolute top-[160px] left-[301px]">{{ d }}</h1>
+              <h1 class="absolute top-[183px] left-[45px]">{{ D }}</h1>
+              <h1 class="absolute top-[2px] left-[122px]">{{ B }}</h1>
+              <h1 class="absolute top-[40px] left-[180px]">{{ r }}</h1>-->
+        <!-- <h1 class="absolute top-[146px] left-[256px]">{{ ra }}</h1>
+              <h1 class="absolute top-[159px] left-[88px]">{{ Da }}</h1>
+              <h1 class="absolute top-[182px] left-[369px]">{{ da }}</h1>
+            </div>
+          </div>
+        </mat-tab>
+      </mat-tab-group> -->
+        <!-- </div> -->
+
+        <div>
+          <!-- <app-deep-groove-table (bearingValue)="receivedValue($event)"></app-deep-groove-table> -->
+          <!-- <app-singlerowcylindrical></app-singlerowcylindrical> -->
+        </div>
+        <!-- </div> -->
+        <!-- </div> --></mat-tab-group
+      >
+    </div>
+  </div>
+</div>

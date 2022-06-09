@@ -1,0 +1,175 @@
+<div class="mp-header">
+    <mat-toolbar color="primary">
+        <div class="flex-shrink-0">
+            <!-- <mat-icon [ngStyle]="{'color':'white','margin-top':'7px','margin-right':'4px'}">keyboard_arrow_left</mat-icon> -->
+            <img (click)="navigation.back()" style="height: 25px;width: 25px; cursor: pointer;"
+                src="../../../../assets/icons/back.png" alt="Audits set-up in Chrome DevTools">
+        </div>
+
+        <div [matMenuTriggerFor]="aboutMenu" class="flex-shrink-0">
+            <img style="margin-top: 17px; height: 55px; width: 55px" class="logo-img"
+                src="../../../../assets/icons/logo.png" alt="Audits set-up in Chrome DevTools" />
+        </div>
+
+        <div>
+            <mat-menu #aboutMenu="matMenu">
+                <!-- <div style="text-align: center;">
+                                Your Biz Name App Home
+                            </div>
+                            <div class="bottom-line"></div> -->
+
+                <button mat-menu-item [routerLink]="['/launch-app/about-app']">
+                    <mat-icon>info</mat-icon>
+                    <span>About this App, Comments and Suggestions </span>
+                </button>
+
+                <button mat-menu-item>
+                    <mat-icon>contact_mail</mat-icon>
+                    <span>Contact</span>
+                </button>
+
+                <button mat-menu-item>
+                    <mat-icon>chat</mat-icon>
+                    <span>Chat</span>
+                </button>
+
+                <button mat-menu-item>
+                    <mat-icon>lock_outline</mat-icon>
+                    <span>Secure Login in Device with no Camera</span>
+                </button>
+
+                <button mat-menu-item>
+                    <mat-icon>settings</mat-icon>
+                    <span>Settings</span>
+                </button>
+            </mat-menu>
+        </div>
+        <!-- 
+        <div class="toolbar-text">
+            {{ appTitle | slice:0:35 }}
+            {{ scrWidth <= '768' ? '...' : appTitle }}
+        </div> -->
+        <div class="toolbar-text"
+            ngStyle.lt-sm="white-space: nowrap; width: 420px; overflow: hidden;text-overflow: ellipsis; ">{{ appTitle}}
+        </div>
+
+
+        <span class="spacer"></span>
+        <div fxHide.xs mat-icon-button fxLayout="column" fxLayoutAlign="center center" class="icon-img">
+            <mat-icon class="" style=" cursor: pointer" matBadge="15" matBadgeColor="warn" matBadgeSize="small"
+                style="cursor: pointer;" [routerLink]="['/notification']">
+                notifications_none
+            </mat-icon>
+        </div>
+        <div fxHide.xs mat-icon-button fxLayout="column" fxLayoutAlign="center center" class="icon-img">
+            <img style="margin-left: 10px; width: 20px; height: 20px; cursor: pointer" (click)="onShare()"
+                src="../../../../assets/icons/shared.png" alt="Audits set-up in Chrome DevTools" />
+        </div>
+        <div fxHide.xs mat-icon-button fxLayout="column" fxLayoutAlign="center center">
+            <div (click)="getPWADisplayMode()"
+                style="margin-left: 10px; color: #FFFFFF; font-size: 16px;margin-right: 5px; cursor: pointer;">
+                Download
+                Web App</div>
+        </div>
+        <div fxHide.xs mat-icon-button fxLayout="column" fxLayoutAlign="center center" class="icon-img">
+            <img style="width: 20px;height: 20px;margin-right: 120px;cursor: pointer;"
+                src="../../../../assets/icons/download.png" alt="Audits set-up in Chrome DevTools">
+        </div>
+        <div fxHide.xs [matMenuTriggerFor]="aboutMenu">
+            <img style="margin-top: 17px; height: 55px; width: 55px" class="logo-img"
+                src="../../../../assets/icons/profile_icon.png" alt="Audits set-up in Chrome DevTools" />
+        </div>
+
+        <div *ngIf="loginPage === 0" fxHide.xs mat-icon-button fxLayout="column" fxLayoutAlign="center center"
+            style="margin-left: 20px;" class="logo-img">
+            <div [matMenuTriggerFor]="accountMenu">
+                <img src="../../../../assets/icons/juck.png"
+                    style="width: 55px;height: 55px; margin-top: 17px;cursor: pointer;"
+                    alt="Audits set-up in Chrome DevTools" />
+            </div>
+            <div>
+                <mat-menu #accountMenu="matMenu">
+                    <button mat-menu-item>
+                        <mat-icon>settings</mat-icon>
+                        <span>Profile</span>
+                    </button>
+
+                    <button mat-menu-item (click)="logOut()">
+                        <mat-icon>exit_to_app</mat-icon>
+                        <span>Sign Out</span>
+                    </button>
+                </mat-menu>
+            </div>
+        </div>
+
+        <div fxLayout="row" fxLayoutAlign="end center" style="width: 100%;" fxHide.gt fxHide.sm fxHide.md fxHide.lg
+            fxHide.xl>
+            <div fxLayoutAlign="end center">
+                <button mat-icon-button [matMenuTriggerFor]="menu" fxLayoutAlign="end end">
+                    <mat-icon class="" style="line-height: 12px;">more_vert</mat-icon>
+                </button>
+
+                <mat-menu #menu="matMenu" [overlapTrigger]="false">
+                    <button mat-menu-item>
+                        <mat-icon>account_circle</mat-icon>
+                        <span>Profile</span>
+                    </button>
+                    <mat-divider></mat-divider>
+                    <button mat-menu-item [routerLink]="['/approve-dialog']">
+                        <mat-icon matBadge="15" matBadgeColor="warn" matBadgeSize="small">notifications_none
+                        </mat-icon>
+                        <span>Notification</span>
+                    </button>
+                    <mat-divider></mat-divider>
+
+                    <button mat-menu-item>
+                        <mat-icon>share</mat-icon>
+                        <span>Share</span>
+                    </button>
+                    <mat-divider></mat-divider>
+
+                    <button mat-menu-item>
+                        <mat-icon>file_download</mat-icon>
+                        <span>Download</span>
+                    </button>
+                    <mat-divider></mat-divider>
+
+                    <button mat-menu-item>
+                        <mat-icon>exit_to_app</mat-icon>
+                        <span>Logout</span>
+                    </button>
+
+                </mat-menu>
+            </div>
+
+
+
+        </div>
+
+
+        <!-- <div fxHide.gt fxHide.sm fxHide.md fxHide.lg fxHide.xl (click)="onToggle()">
+            <div *ngIf="toggleMenu == false; else menu">
+                <button mat-icon-button>
+                    <mat-icon>menu</mat-icon>
+                </button>
+            </div>
+            <ng-template #menu>
+                <div fxHide.gt fxHide.sm fxHide.md fxHide.lg fxHide.xl mat-icon-button fxLayout="column"
+                    fxLayoutAlign="center center" class="icon-img">
+                    <img src="../../../../assets/icons/share.png" class="orders-icon" alt="my orders" alt="Audits set-up in Chrome DevTools">
+                    <span class="icon-text">Share</span>
+                </div>
+                <div fxHide.gt fxHide.sm fxHide.md fxHide.lg fxHide.xl mat-icon-button fxLayout="column"
+                    fxLayoutAlign="center center" class="icon-img">
+                    <img src="../../../../assets/icons/download.png" class="orders-icon" alt="my orders" alt="Audits set-up in Chrome DevTools">
+                    <span class="icon-text">Download Web App</span>
+                </div>
+                <div fxHide.gt fxHide.sm fxHide.md fxHide.lg fxHide.xl mat-icon-button fxLayout="column"
+                    fxLayoutAlign="center center" class="icon-img">
+                    <img src="../../../../assets/icons/profile_icon.png" class="bag-icon" alt="my orders" alt="Audits set-up in Chrome DevTools">
+                    <span class="icon-text">Profile</span>
+                </div>
+            </ng-template>
+        </div> -->
+    </mat-toolbar>
+</div>

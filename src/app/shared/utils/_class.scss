@@ -1,0 +1,44 @@
+// --------------------- underline  ----------------
+.ul {
+    text-decoration: underline;
+}
+
+
+
+// --------------------- Hover ----------------
+.hover:hover {
+    text-decoration: underline;
+}
+
+// --------------------- Heading ----------------
+
+.primary-heading {
+    color: $primary-text-color;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.secondary-heading {
+    color: $secondary-tyext-color;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+// --------------------- Button ----------------
+
+.btn {
+    color: #ffffff;
+    line-height: 27px;
+    border-radius: 15px;
+    background-color: $primary-text-color;
+    height: 30px;
+}
+
+// --------------------- Box-shadow ----------------
+
+
+.box-shadow {
+    background: #FFFFFF;
+    box-shadow: 0 8px 12px rgba(47, 60, 74, .04), 0 2px 6px rgba(47, 60, 74, .08) !important;
+    border-radius: 5px;
+}

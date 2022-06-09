@@ -1,0 +1,73 @@
+@import"../../../shared/utils/global";
+@import"../../../shared/utils/variables";
+@import"../../../shared/utils/theme";
+@import"../../../shared/utils/class";
+
+._container {
+    .content {
+        @include view-height(37px);
+        padding: 10px;
+
+        .notification-area {
+            padding-top: 20px;
+
+            .icon {
+                color: $primary-color;
+                font-size: 30px;
+
+            }
+
+            .text {
+                color: $secondary-color;
+                color: #9A9A9A;
+                padding: 10px;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 8px;
+
+            }
+        }
+
+        .user {
+            border: 5px solid silver;
+            width: 300px;
+            height: 300px;
+        }
+
+        .circle {
+            width: 220px;
+            height: 220px;
+            border-radius: 100%;
+            background: silver;
+            position: relative;
+            top: 20px;
+        }
+
+        .inner-text {
+            font-size: 10px;
+            width: 100px;
+            text-align: center;
+        }
+
+        .triangle {
+            /* width: 120px; */
+
+            border-bottom: 50px solid silver;
+            border-left: 90px solid transparent;
+            border-right: 90px solid transparent;
+            margin-bottom: 5px;
+        }
+
+        .map {
+            width: 50px;
+            height: 50px;
+        }
+
+    }
+}
+
+
+
+@media only screen and (min-width: 960px) {}
+
+@media only screen and (max-width: 960px) {}

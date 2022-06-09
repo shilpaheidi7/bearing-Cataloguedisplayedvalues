@@ -1,0 +1,32 @@
+<div class="p-" style="height: calc(100vh - 78px)">
+  <div class="flex flex-col-reverse lt-md:flex-col">
+    <div>
+      <!-- <mat-tab-group mat-align-tabs="center"> -->
+      <!-- <mat-tab label="Type - 1"> -->
+      <p class="p-1 text-black font-medium text-center mx-auto">Adapter assemblies for self-aligning ball bearings</p>
+      <div class="flex flex-row lt-md:flex-col justify-center gt-sm:space-x-4 lt-md:space-y-4 p-1 m-2">
+        <div class="relative flex justify-center">
+          <img src="../../../../../../assets/images/adapter1.png" class="w-[300px] h-[350px]" />
+
+          <h1 class="absolute top-[170px] left-[207px]">{{ d1 }}</h1>
+          <h1 class="absolute top-[169px] left-[272px]">{{ d2 }}</h1>
+          <h1 class="absolute top-[16px] left-[158px]">{{ B2 }}</h1>
+          <h1 class="absolute top-[160px] left-[228px]">{{ r }}</h1>
+          <h1 class="absolute top-[156px] left-[109px]">{{ B1 }}</h1>
+        </div>
+        <div class="relative justify-center">
+          <img src="../../../../../../assets/images/adapter2.png" class="w-[300px] h-[350px]" />
+          <!-- <h1 class="absolute top-[161px] left-[45px]">{{ Da }}</h1>
+              <h1 class="absolute top-[161px] left-[299px]">{{ da }}</h1> -->
+          <h1 class="absolute top-[11px] left-[172px]">{{ A }}</h1>
+          <h1 class="absolute top-[164px] left-[34px]">{{ de }}</h1>
+          <h1 class="absolute top-[188px] left-[282px]">{{ K }}</h1>
+          <h1 class="absolute top-[175px] left-[122px]">{{ b }}</h1>
+        </div>
+      </div>
+      <app-selftableAdapterassemlies (bearingValue)="receivedValue($event)"> </app-selftableAdapterassemlies>
+      <!-- </mat-tab> -->
+      <!-- </mat-tab-group> -->
+    </div>
+  </div>
+</div>

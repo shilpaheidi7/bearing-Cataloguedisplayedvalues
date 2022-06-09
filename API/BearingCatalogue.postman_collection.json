@@ -1,0 +1,1206 @@
+{
+	"info": {
+		"_postman_id": "6fa11fa7-bddc-4101-afbe-43504fe0551a",
+		"name": "BearingCatalogue",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Deep groove ball bearings",
+			"item": [
+				{
+					"name": "single row",
+					"item": [
+						{
+							"name": "open type",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://api.getbiz.app/bearing-catalogue/api/GetSinglerowopentype",
+									"protocol": "https",
+									"host": [
+										"api",
+										"getbiz",
+										"app"
+									],
+									"path": [
+										"bearing-catalogue",
+										"api",
+										"GetSinglerowopentype"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "shielded type/sealed type",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://api.getbiz.app/bearing-catalogue/api/GetSinglerowsealedtype",
+									"protocol": "https",
+									"host": [
+										"api",
+										"getbiz",
+										"app"
+									],
+									"path": [
+										"bearing-catalogue",
+										"api",
+										"GetSinglerowsealedtype"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "snap ring groove type/locating snap ring type",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://api.getbiz.app/bearing-catalogue/api/GetSinglerowsnapringgroovetype",
+									"protocol": "https",
+									"host": [
+										"api",
+										"getbiz",
+										"app"
+									],
+									"path": [
+										"bearing-catalogue",
+										"api",
+										"GetSinglerowsnapringgroovetype"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "extra small miniature ball bearings",
+					"item": [
+						{
+							"name": "open/shielded/sealed type",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://api.getbiz.app/bearing-catalogue/api/GetExtrasmallminiatureballbearings",
+									"protocol": "https",
+									"host": [
+										"api",
+										"getbiz",
+										"app"
+									],
+									"path": [
+										"bearing-catalogue",
+										"api",
+										"GetExtrasmallminiatureballbearings"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "flanged type (open/shielded type)",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://api.getbiz.app/bearing-catalogue/api/GetFlangedtype",
+									"protocol": "https",
+									"host": [
+										"api",
+										"getbiz",
+										"app"
+									],
+									"path": [
+										"bearing-catalogue",
+										"api",
+										"GetFlangedtype"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "double-row",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.getbiz.app/bearing-catalogue/api/GetDoublerowdeepgroove",
+							"protocol": "https",
+							"host": [
+								"api",
+								"getbiz",
+								"app"
+							],
+							"path": [
+								"bearing-catalogue",
+								"api",
+								"GetDoublerowdeepgroove"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Angular contact ball bearings",
+			"item": [
+				{
+					"name": "single-row",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.getbiz.app/bearing-catalogue/api/GetSinglerowcontactball",
+							"protocol": "https",
+							"host": [
+								"api",
+								"getbiz",
+								"app"
+							],
+							"path": [
+								"bearing-catalogue",
+								"api",
+								"GetSinglerowcontactball"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "matched-pair",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.getbiz.app/bearing-catalogue/api/GetMatchedpair",
+							"protocol": "https",
+							"host": [
+								"api",
+								"getbiz",
+								"app"
+							],
+							"path": [
+								"bearing-catalogue",
+								"api",
+								"GetMatchedpair"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "double-row",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.getbiz.app/bearing-catalogue/api/GetDoublerowcontactball",
+							"protocol": "https",
+							"host": [
+								"api",
+								"getbiz",
+								"app"
+							],
+							"path": [
+								"bearing-catalogue",
+								"api",
+								"GetDoublerowcontactball"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Self-aligning ball bearings",
+			"item": [
+				{
+					"name": "open type",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.getbiz.app/bearing-catalogue/api/GetSelfaligningopentype",
+							"protocol": "https",
+							"host": [
+								"api",
+								"getbiz",
+								"app"
+							],
+							"path": [
+								"bearing-catalogue",
+								"api",
+								"GetSelfaligningopentype"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "sealed type",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.getbiz.app/bearing-catalogue/api/GetSelfaligningsealedtype",
+							"protocol": "https",
+							"host": [
+								"api",
+								"getbiz",
+								"app"
+							],
+							"path": [
+								"bearing-catalogue",
+								"api",
+								"GetSelfaligningsealedtype"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "extended inner ring type",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.getbiz.app/bearing-catalogue/api/GetExtendedinnerringtype",
+							"protocol": "https",
+							"host": [
+								"api",
+								"getbiz",
+								"app"
+							],
+							"path": [
+								"bearing-catalogue",
+								"api",
+								"GetExtendedinnerringtype"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "adapter assemblies for self-aligning ball bearings",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.getbiz.app/bearing-catalogue/api/GetAdapterassemlies",
+							"protocol": "https",
+							"host": [
+								"api",
+								"getbiz",
+								"app"
+							],
+							"path": [
+								"bearing-catalogue",
+								"api",
+								"GetAdapterassemlies"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Cylindrical roller bearings",
+			"item": [
+				{
+					"name": "single-row",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.getbiz.app/bearing-catalogue/api/GetSinglerowcylindrical",
+							"protocol": "https",
+							"host": [
+								"api",
+								"getbiz",
+								"app"
+							],
+							"path": [
+								"bearing-catalogue",
+								"api",
+								"GetSinglerowcylindrical"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "thrust collars",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.getbiz.app/bearing-catalogue/api/GetThrustcollars",
+							"protocol": "https",
+							"host": [
+								"api",
+								"getbiz",
+								"app"
+							],
+							"path": [
+								"bearing-catalogue",
+								"api",
+								"GetThrustcollars"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "double-row",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.getbiz.app/bearing-catalogue/api/GetDoublerowcylidrical",
+							"protocol": "https",
+							"host": [
+								"api",
+								"getbiz",
+								"app"
+							],
+							"path": [
+								"bearing-catalogue",
+								"api",
+								"GetDoublerowcylidrical"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Tapered roller bearings",
+			"item": [
+				{
+					"name": "single-row",
+					"item": [
+						{
+							"name": "metric series",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://api.getbiz.app/bearing-catalogue/api/GetSinglerowmetricseries",
+									"protocol": "https",
+									"host": [
+										"api",
+										"getbiz",
+										"app"
+									],
+									"path": [
+										"bearing-catalogue",
+										"api",
+										"GetSinglerowmetricseries"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "inch series",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://api.getbiz.app/bearing-catalogue/api/Getsinglerowinchseries",
+									"protocol": "https",
+									"host": [
+										"api",
+										"getbiz",
+										"app"
+									],
+									"path": [
+										"bearing-catalogue",
+										"api",
+										"Getsinglerowinchseries"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "double-row",
+					"item": [
+						{
+							"name": "TDO type",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://api.getbiz.app/bearing-catalogue/api/GetTdotype",
+									"protocol": "https",
+									"host": [
+										"api",
+										"getbiz",
+										"app"
+									],
+									"path": [
+										"bearing-catalogue",
+										"api",
+										"GetTdotype"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "TDI type",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://api.getbiz.app/bearing-catalogue/api/GetTditype",
+									"protocol": "https",
+									"host": [
+										"api",
+										"getbiz",
+										"app"
+									],
+									"path": [
+										"bearing-catalogue",
+										"api",
+										"GetTditype"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Spherical roller bearings",
+			"item": [
+				{
+					"name": "spherical thrust roller bearings",
+					"item": [
+						{
+							"name": "spherical thrust",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://api.getbiz.app/bearing-catalogue/api/GetGetsphericalthrustroller",
+									"protocol": "https",
+									"host": [
+										"api",
+										"getbiz",
+										"app"
+									],
+									"path": [
+										"bearing-catalogue",
+										"api",
+										"GetGetsphericalthrustroller"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "spherical roller bearings",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.getbiz.app/bearing-catalogue/api/GetSphericalrollerbearings",
+							"protocol": "https",
+							"host": [
+								"api",
+								"getbiz",
+								"app"
+							],
+							"path": [
+								"bearing-catalogue",
+								"api",
+								"GetSphericalrollerbearings"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "adapter assemblies for spherical roller bearings",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.getbiz.app/bearing-catalogue/api/GetAdapterassembliesshperical",
+							"protocol": "https",
+							"host": [
+								"api",
+								"getbiz",
+								"app"
+							],
+							"path": [
+								"bearing-catalogue",
+								"api",
+								"GetAdapterassembliesshperical"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "withdrawal sleeves for spherical roller bearings",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.getbiz.app/bearing-catalogue/api/GetWithdrawalsleeves",
+							"protocol": "https",
+							"host": [
+								"api",
+								"getbiz",
+								"app"
+							],
+							"path": [
+								"bearing-catalogue",
+								"api",
+								"GetWithdrawalsleeves"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Thrust ball bearings",
+			"item": [
+				{
+					"name": "single direction",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.getbiz.app/bearing-catalogue/api/GetSingledirctionthrust",
+							"protocol": "https",
+							"host": [
+								"api",
+								"getbiz",
+								"app"
+							],
+							"path": [
+								"bearing-catalogue",
+								"api",
+								"GetSingledirctionthrust"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "double direction",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.getbiz.app/bearing-catalogue/api/GetDoubledirectionthrust",
+							"protocol": "https",
+							"host": [
+								"api",
+								"getbiz",
+								"app"
+							],
+							"path": [
+								"bearing-catalogue",
+								"api",
+								"GetDoubledirectionthrust"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Needle roller bearings",
+			"item": [
+				{
+					"name": "heavy-duty type",
+					"item": [
+						{
+							"name": "Heavy-duty needle roller bearings without inner rings metric series NK, NKS, RNA48, RNA49 RNA69, NKTN series",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJJbnZlbnRvcnlBcGlTZXJ2aWNlQWNjZXNzVG9rZW4iLCJqdGkiOiI3NmZiZjFhMS02YmY2LTQ3MjMtYTdkYy02ZmMwZTZhNjAxODYiLCJpYXQiOiI0LzQvMjAyMiAxMDowNTowMiBBTSIsIklkIjoiMiIsIk1vYmlsZV9ObyI6IjEyMzQ1Njc4OSIsIlBhc3N3b3JkIjoidGVzdDEyMyIsImV4cCI6MTY0OTA2ODUwMiwiaXNzIjoiSW52ZW50b3J5QXBpQXV0aGVudGljYXRpb25TZXJ2ZXIiLCJhdWQiOiJJbnZlbnRyb3lTZXJ2aWNlUG9zdG1hbkNsaWVudCJ9.ypd4AOs1UZimescRQ1bHF-VgOPEHxxTqz5EY4RHrZuI",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://api.getbiz.app/bearing-catalogue/api/GetHeavydutyneedlemetricseries",
+									"protocol": "https",
+									"host": [
+										"api",
+										"getbiz",
+										"app"
+									],
+									"path": [
+										"bearing-catalogue",
+										"api",
+										"GetHeavydutyneedlemetricseries"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Heavy-duty needle roller bearings inch series HJ type",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://api.getbiz.app/bearing-catalogue/api/GetHeavydutyneedleinchseries",
+									"protocol": "https",
+									"host": [
+										"api",
+										"getbiz",
+										"app"
+									],
+									"path": [
+										"bearing-catalogue",
+										"api",
+										"GetHeavydutyneedleinchseries"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "drawn cup type",
+					"item": [
+						{
+							"name": "Drawn cup needle roller bearings caged, open ends, closed one end metric series HK, BK series",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://api.getbiz.app/bearing-catalogue/api/GetDrawcupneedlemetricseries",
+									"protocol": "https",
+									"host": [
+										"api",
+										"getbiz",
+										"app"
+									],
+									"path": [
+										"bearing-catalogue",
+										"api",
+										"GetDrawcupneedlemetricseries"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Drawn cup needle roller bearings caged, open ends, closed one end inch series J, JH, MJ-1, MJH-1 series",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://api.getbiz.app/bearing-catalogue/api/GetDrawcupneedleinchseries",
+									"protocol": "https",
+									"host": [
+										"api",
+										"getbiz",
+										"app"
+									],
+									"path": [
+										"bearing-catalogue",
+										"api",
+										"GetDrawcupneedleinchseries"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "thrust",
+					"item": [
+						{
+							"name": "Needle roller thrust bearings, assemblies, washers thrust cylindrical roller and cage assemblies, thrust washers metric series",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://api.getbiz.app/bearing-catalogue/api/GetNeedlerollerthrustmetricseries2",
+									"protocol": "https",
+									"host": [
+										"api",
+										"getbiz",
+										"app"
+									],
+									"path": [
+										"bearing-catalogue",
+										"api",
+										"GetNeedlerollerthrustmetricseries2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Needle roller thrust bearings, assemblies, washers thrust needle roller and cage assemblies, thrust washers inch series",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://api.getbiz.app/bearing-catalogue/api/GetNeedlerollerthrustinchseries",
+									"protocol": "https",
+									"host": [
+										"api",
+										"getbiz",
+										"app"
+									],
+									"path": [
+										"bearing-catalogue",
+										"api",
+										"GetNeedlerollerthrustinchseries"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Needle roller thrust bearings, assemblies, washers thrust needle roller and cage assemblies, thrust washers metric series AXK, FNT series",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://api.getbiz.app/bearing-catalogue/api/GetNeedlerollerthrustmetricseries",
+									"protocol": "https",
+									"host": [
+										"api",
+										"getbiz",
+										"app"
+									],
+									"path": [
+										"bearing-catalogue",
+										"api",
+										"GetNeedlerollerthrustmetricseries"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "inner ring",
+					"item": [
+						{
+							"name": "Needle roller bearings, accessories inner rings metric series",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://api.getbiz.app/bearing-catalogue/api/GetNeedlerollermetricseries",
+									"protocol": "https",
+									"host": [
+										"api",
+										"getbiz",
+										"app"
+									],
+									"path": [
+										"bearing-catalogue",
+										"api",
+										"GetNeedlerollermetricseries"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Heavy-duty needle roller bearings inner rings inch series",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://api.getbiz.app/bearing-catalogue/api/GetHeavydutyneedleinnerrings",
+									"protocol": "https",
+									"host": [
+										"api",
+										"getbiz",
+										"app"
+									],
+									"path": [
+										"bearing-catalogue",
+										"api",
+										"GetHeavydutyneedleinnerrings"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Needle roller bearings, accessories inner rings for machine-tool quality precision-combined bearings metric series",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://api.getbiz.app/bearing-catalogue/api/GetNeedlerollermetricseries2",
+									"protocol": "https",
+									"host": [
+										"api",
+										"getbiz",
+										"app"
+									],
+									"path": [
+										"bearing-catalogue",
+										"api",
+										"GetNeedlerollermetricseries2"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "combined",
+					"item": [
+						{
+							"name": "Combined needle roller bearings cylindrical roller thrust series metric series",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://api.getbiz.app/bearing-catalogue/api/GetCombinedneedlemetricseries",
+									"protocol": "https",
+									"host": [
+										"api",
+										"getbiz",
+										"app"
+									],
+									"path": [
+										"bearing-catalogue",
+										"api",
+										"GetCombinedneedlemetricseries"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Combined needle roller bearings ball thrust series metric series",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://api.getbiz.app/bearing-catalogue/api/GetCombinedneedlemetricseries2",
+									"protocol": "https",
+									"host": [
+										"api",
+										"getbiz",
+										"app"
+									],
+									"path": [
+										"bearing-catalogue",
+										"api",
+										"GetCombinedneedlemetricseries2"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "miniature one-way clutches",
+					"item": [
+						{
+							"name": "Miniature one-way clutches",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://api.getbiz.app/bearing-catalogue/api/GetMiniatureonewayclutches",
+									"protocol": "https",
+									"host": [
+										"api",
+										"getbiz",
+										"app"
+									],
+									"path": [
+										"bearing-catalogue",
+										"api",
+										"GetMiniatureonewayclutches"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "needle roller and cage assemblies",
+					"item": [
+						{
+							"name": "Radial needle roller and cage assemblies single-row, double-row assemblies metric series K, K ZW series",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://api.getbiz.app/bearing-catalogue/api/GetRadialneedlemetricseries",
+									"protocol": "https",
+									"host": [
+										"api",
+										"getbiz",
+										"app"
+									],
+									"path": [
+										"bearing-catalogue",
+										"api",
+										"GetRadialneedlemetricseries"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Radial needle roller and cage assemblies single-row assemblies inch series",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://api.getbiz.app/bearing-catalogue/api/GetRadialneedleinchseries",
+									"protocol": "https",
+									"host": [
+										"api",
+										"getbiz",
+										"app"
+									],
+									"path": [
+										"bearing-catalogue",
+										"api",
+										"GetRadialneedleinchseries"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "DataExport",
+			"item": [
+				{
+					"name": "DataExport",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.getbiz.app/bearing-catalogue/api/DataExport/api/DataExport?TableName=Adapter%20Assemblies%20Spherical",
+							"protocol": "https",
+							"host": [
+								"api",
+								"getbiz",
+								"app"
+							],
+							"path": [
+								"bearing-catalogue",
+								"api",
+								"DataExport",
+								"api",
+								"DataExport"
+							],
+							"query": [
+								{
+									"key": "TableName",
+									"value": "Adapter%20Assemblies%20Spherical"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "UserRegisteration",
+			"item": [
+				{
+					"name": "AddUserRegisteration",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 1,\r\n  \"user_id\": 1,\r\n  \"text\": \"test\",\r\n  \"password\": \"test@123\",\r\n  \"mobile_number\": \"9566970623\",\r\n  \"photo_id\": \"test\",\r\n  \"user_type\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.getbiz.app/bearing-catalogue/api/UserRegisteration/api/AddUserRegisteration",
+							"protocol": "https",
+							"host": [
+								"api",
+								"getbiz",
+								"app"
+							],
+							"path": [
+								"bearing-catalogue",
+								"api",
+								"UserRegisteration",
+								"api",
+								"AddUserRegisteration"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetUserRegisteration",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJJbnZlbnRvcnlBcGlTZXJ2aWNlQWNjZXNzVG9rZW4iLCJqdGkiOiI3NmZiZjFhMS02YmY2LTQ3MjMtYTdkYy02ZmMwZTZhNjAxODYiLCJpYXQiOiI0LzQvMjAyMiAxMDowNTowMiBBTSIsIklkIjoiMiIsIk1vYmlsZV9ObyI6IjEyMzQ1Njc4OSIsIlBhc3N3b3JkIjoidGVzdDEyMyIsImV4cCI6MTY0OTA2ODUwMiwiaXNzIjoiSW52ZW50b3J5QXBpQXV0aGVudGljYXRpb25TZXJ2ZXIiLCJhdWQiOiJJbnZlbnRyb3lTZXJ2aWNlUG9zdG1hbkNsaWVudCJ9.ypd4AOs1UZimescRQ1bHF-VgOPEHxxTqz5EY4RHrZuI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.getbiz.app/bearing-catalogue/api/UserRegisteration/api/GetUserRegisteration",
+							"protocol": "https",
+							"host": [
+								"api",
+								"getbiz",
+								"app"
+							],
+							"path": [
+								"bearing-catalogue",
+								"api",
+								"UserRegisteration",
+								"api",
+								"GetUserRegisteration"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "UserLogin",
+			"item": [
+				{
+					"name": "UserLogin",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": " eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJJbnZlbnRvcnlBcGlTZXJ2aWNlQWNjZXNzVG9rZW4iLCJqdGkiOiI4Y2YwNTg4MS05MzExLTRmNzYtOWZiMy1mNWM3MTg4YTU4OWYiLCJpYXQiOiI0LzQvMjAyMiA3OjM3OjA5IEFNIiwiSWQiOiIyIiwiTW9iaWxlX05vIjoiMTIzNDU2Nzg5IiwiUGFzc3dvcmQiOiJ0ZXN0MTIzIiwiZXhwIjoxNjQ5MDU5NjI5LCJpc3MiOiJJbnZlbnRvcnlBcGlBdXRoZW50aWNhdGlvblNlcnZlciIsImF1ZCI6IkludmVudHJveVNlcnZpY2VQb3N0bWFuQ2xpZW50In0.a3uRTBMcmreZ_Y5GorpbO6Pk-z9MgBjrye6bdqGqjE0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"password\": \"test123\",\r\n  \"mobile_number\": \"123456789\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.getbiz.app/bearing-catalogue/api/UserLogin",
+							"protocol": "https",
+							"host": [
+								"api",
+								"getbiz",
+								"app"
+							],
+							"path": [
+								"bearing-catalogue",
+								"api",
+								"UserLogin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UserLogin",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.getbiz.app/bearing-catalogue/api/UserLogin?Mobile_No=9566970623&Password=test@123",
+							"protocol": "https",
+							"host": [
+								"api",
+								"getbiz",
+								"app"
+							],
+							"path": [
+								"bearing-catalogue",
+								"api",
+								"UserLogin"
+							],
+							"query": [
+								{
+									"key": "Mobile_No",
+									"value": "9566970623"
+								},
+								{
+									"key": "Password",
+									"value": "test@123"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

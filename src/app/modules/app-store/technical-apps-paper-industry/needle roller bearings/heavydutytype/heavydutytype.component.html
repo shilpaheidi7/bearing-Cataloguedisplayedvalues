@@ -1,0 +1,109 @@
+<div class="p-1" style="height: calc(100vh - 78px)">
+  <div class="flex flex-col-reverse sm:flex-col">
+    <div>
+      <mat-tab-group mat-align-tabs="center">
+        <mat-tab label="Type - 1">
+          <p class="p-1 text-black font-medium text-center mx-auto">
+            Heavy-duty needle roller bearings without inner rings metric series NK, NKS, RNA48, RNA49 RNA69, NKTN series
+          </p>
+          <div class="flex flex-row lt-xs:flex-col gt-xs:space-x-4 lt-xs:space-y-4 p-2 m-1 justify-center">
+            <div class="relative flex justify-center">
+              <img src="../../../../../../assets/images/heavyduty1.png" class="w-[450px] h-[350px]" />
+              <h1 class="absolute top-[181px] left-[275px]">{{ d }}</h1>
+              <h1 class="absolute top-[153px] left-[107px] gt-lg:left-[172px] md:left-[136px] lt-xs:left-[109px]">
+                {{ D }}
+              </h1>
+              <h1 class="absolute top-[0px] left-[141px]">{{ B }}</h1>
+              <h1 class="absolute top-[39px] left-[53px] gt-lg:left-[62px] md:left-[51px] lt-xs:left-[41px]">
+                {{ r }}
+              </h1>
+              <h1 class="absolute top-[135px] left-[30px] lt-xs:left-[21px]">{{ Fw }}</h1>
+              <h1 class="absolute top-[-3px] left-[79px] gt-lg:left-[106px] md:left-[82px] lt-xs:left-[66px]">
+                {{ C }}
+              </h1>
+            </div>
+            <div class="relative flex justify-center">
+              <img src="../../../../../../assets/images/heavyduty2.png" class="w-[450px] h-[350px]" />
+              <!--<h1 class="absolute top-[181px] left-[225px]">{{ d }}</h1>
+              <h1 class="absolute top-[183px] left-[45px]">{{ D }}</h1>
+              <h1 class="absolute top-[2px] left-[122px]">{{ B }}</h1>-->
+              <!-- <h1 class="absolute top-[22px] left-[228px]">{{ r }}</h1> -->
+              <h1 class="absolute top-[161px] left-[45px]">{{ Da }}</h1>
+              <h1 class="absolute top-[161px] left-[299px]">{{ da }}</h1>
+            </div>
+          </div>
+          <app-heavydutytable (bearingValue)="receivedValue($event)"></app-heavydutytable>
+        </mat-tab>
+        <mat-tab label="Type - 2">
+          <p class="p-1 text-black font-medium text-center mx-auto">
+            Heavy-duty needle roller bearings inch series HJ type
+          </p>
+          <div class="flex flex-row lt-xs:flex-col gt-xs:space-x-4 lt-xs:space-y-4 p-2 m-1 justify-center">
+            <div class="relative flex flex-row justify-center">
+              <img src="../../../../../../assets/images/Heavydutyinchseries.png" class="h-[350px] w-full" />
+              <h1 class="absolute top-[324px] gt-lg:left-[208px] md:left-[165px] lt-xs:left-[139px] left-[148px]">
+                {{ rt2 }}
+              </h1>
+              <h1 class="absolute top-[158px] left-[152px] gt-lg:left-[214px] md:left-[160px] lt-xs:left-[138px]">
+                {{ Dt2 }}
+              </h1>
+              <h1 class="absolute top-[160px] left-[2px]">{{ Fwt2 }}</h1>
+              <h1 class="absolute top-[25px] left-[98px] md:left-[105px] gt-lg:left-[134px] lt-xs:left-[90px]">
+                {{ Ct2 }}
+              </h1>
+            </div>
+            <div class="relative flex flex-wrap justify-center">
+              <img src="../../../../../../assets/images/Heavydutyinchseries1.png" class="h-[350px] w-full" />
+              <!--<h1 class="absolute top-[177px] left-[132px]">{{ d }}</h1>-->
+              <!--<h1 class="absolute top-[180px] left-[-5px]">{{ D }}</h1>-->
+
+              <!--<h1 class="absolute top-[39px] left-[66px]">{{ B }}</h1>-->
+              <!-- <h1 class="absolute top-[181px] left-[340px]">{{ Da }}</h1> -->
+              <h1 class="absolute top-[164px] left-[27px] gt-lg:left-[52px] md:left-[34px] lt-xs:left-[10px]">
+                {{ Dat2 }}
+              </h1>
+              <!-- <h1 class="absolute top-[74px] left-[481px]">{{ r }}</h1> -->
+            </div>
+          </div>
+          <app-heavydutyinchseries (bearingValue)="receivedValue($event)"></app-heavydutyinchseries>
+        </mat-tab>
+        <!-- <mat-tab label="Type - 3">
+          <p class="p-1 text-black font-medium text-center mx-auto">
+            Single-row deep groove ball bearing snap ring groove type, locating snap ring type
+          </p>
+          <div class="flex flex-wrap justify-center space-x-0 py-2 sm:space-x-4">
+            <div class="relative w-[550px] flex flex-wrap justify-center">
+              <img src="../../../../../assets/images/single_row_ball_bearing_snap_ring.png" class="h-[350px] w-full" />
+              <h1 class="absolute top-[149px] left-[160px]">{{ d }}</h1>
+              <h1 class="absolute top-[151px] left-[-7px]">{{ D }}</h1>
+              <h1 class="absolute top-[-5px] left-[95px]">{{ B }}</h1>
+              <h1 class="absolute top-[43px] left-[126px]">{{ r }}</h1>
+            </div>
+            <div class="relative w-[550px] flex flex-wrap justify-center">
+              <img
+                src="../../../../../assets/images/single_row_ball_bearing_snap_ring_two.png"
+                class="h-[350px] w-full"
+              /> -->
+        <!-- <h1 class="absolute top-[160px] left-[301px]">{{ d }}</h1>
+              <h1 class="absolute top-[183px] left-[45px]">{{ D }}</h1>
+              <h1 class="absolute top-[2px] left-[122px]">{{ B }}</h1>
+              <h1 class="absolute top-[40px] left-[180px]">{{ r }}</h1>-->
+        <!-- <h1 class="absolute top-[146px] left-[256px]">{{ ra }}</h1>
+              <h1 class="absolute top-[159px] left-[88px]">{{ Da }}</h1>
+              <h1 class="absolute top-[182px] left-[369px]">{{ da }}</h1>
+            </div>
+          </div>
+        </mat-tab>
+      </mat-tab-group> -->
+        <!-- </div> -->
+
+        <div>
+          <!-- <app-deep-groove-table (bearingValue)="receivedValue($event)"></app-deep-groove-table> -->
+          <!-- <app-singlerowcylindrical></app-singlerowcylindrical> -->
+        </div>
+        <!-- </div> -->
+        <!-- </div> -->
+      </mat-tab-group>
+    </div>
+  </div>
+</div>
